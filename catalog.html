@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="css/style.css">
+  </head>
+  <body>
+                  <!--Хедер-->
+    <header class="main-header">
+
+    <div class="container">
+                  <!--Логотип в хедере-->
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
+        </a>
+      </div>
+                  <!--Навигационное меню-->
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+                    <!--Основное содержание-->
+    <main class="container">
+
+                    <!--Заголовок-->
+      <div class="title">
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
+
+                    <!--Боковая колонка-->
+      <div class="sidebar">
+        <form>
+                    <!--Стоимость-->
+          <fieldset>
+            <legend>Стоимость:</legend>
+
+            <label>
+              <input type="range" name="price">
+            </label>
+            <label>
+              От <input type="text" name="from" value="0">
+            </label>
+            <label>
+              До <input type="text" name="into" value="15000">
+            </label>
+          </fieldset>
+
+                    <!--Сетка-->
+          <fieldset>
+            <legend>Сетка:</legend>
+
+            <label>
+              Адаптивная <input type="checkbox" name="adaptive">
+            </label>
+            <label>
+              Фиксированная <input type="checkbox" name="fixed">
+            </label>
+            <label>
+              Резиновая <input type="checkbox" name="stretch">
+            <label>
+          </fieldset>
+
+                    <!--Особенности-->
+          <fieldset>
+            <legend>Особенности:</legend>
+
+            <label>
+              Слайдер <input type="checkbox" name="slider">
+            </label>
+            <label>
+              Блок преимуществ <input type="checkbox" name="block-advantages">
+            </label>
+            <label>
+              Новости <input type="checkbox" name="news">
+            </label>
+            <label>
+              Галерея <input type="checkbox" name="gallery">
+            </label>
+            <label>
+              Корзина <input type="checkbox" name="basket">
+            </label>
+          </fieldset>
+
+                      <!--Показать-->
+          <div class="show">
+            <a href="#">Показать</a>
+          </div>
+        </form>
+      </div>
+
+                      <!--Сортировка-->
+      <div class="breadcrumbs">
+        <span>Сортривать:</span>
+        <ul>
+          <li>
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href="#">По типу</a>
+          </li>
+          <li>
+            <a href="#">По функционалу</a>
+          </li>
+        </ul>
+      </div>
+
+                      <!--Каталог макетов-->
+      <div class="catalog-layout">
+        <div class="catalog-img">
+          <img src="img/maket-1.jpg" width="240" height="240" alt="Макет-1" class="img">
+          <img src="img/up-img-1.png" width="240" height="30" alt="Верхушка картинки">
+
+          <img src="img/maket-2.jpg" width="240" height="240" alt="Макет-1" class="img">
+          <img src="img/up-img-2.png" width="240" height="30" alt="Верхушка картинки">
+          <div class="window-on-img">
+            <h2>Sunset</h2>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <div class="price-layout">
+              <span class="price">1 0000 р.</span>
+          </div>
+
+          <img src="img/maket-3.jpg" width="240" height="240" alt="Макет-1" class="img">
+          <img src="img/up-img-1.png" width="240" height="30" alt="Верхушка картинки">
+
+          <img src="img/maket-4.jpg" width="240" height="240" alt="Макет-1" class="img">
+
+          <img src="img/maket-5.jpg" width="240" height="240" alt="Макет-1" class="img">
+          <img src="img/up-img-1.png" width="240" height="30" alt="Верхушка картинки">
+
+          <img src="img/maket-6.jpg" width="240" height="240" alt="Макет-1" class="img">
+          <img src="img/up-img-1.png" width="240" height="30" alt="Верхушка картинки">
+
+        </div>
+
+                      <!--Переключатели страниц-->
+        <div class="pagination">
+          <ul>
+            <li>
+              <a href="#" class="active">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+                      <!--Студия на карте-->
+      <div class="maps">
+        <img src="img/map.jpg" width="1199" height="416" alt="Нёрдс на карте">
+        <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
+        <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
+
+                      <!--Адресное окно-->
+      <div class="address-window">
+        <h3>Nёrds design studio</h3>
+        <p>
+          191186, Санкт-Петербург,
+          ул. Б. Конюшенная, дю 19/8
+        </p>
+        <p>
+          тел. +7 (812) 275-75-75
+        </p>
+        <a href="#">
+          Напишите нам
+        </a>
+      </div>
+    </div>
+
+    </main>
+                    <!--Футер-->
+    <footer class="main-footer">
+      <div class="container">
+
+                    <!--Ссылки на соц. сети-->
+        <div class="footer-social">
+          <a href="#">
+            <img src="img/round.png" width="" height="" alt="Кружки для иконок соц. сетей">
+          </a>
+          <a href="#">
+            <img src="img/round.png" width="" height="" alt="Кружки для иконок соц. сетей">
+          </a>
+          <a href="#">
+            <img src="img/round.png" width="" height="" alt="Кружки для иконок соц. сетей">
+          </a>
+        </div>
+
+                    <!--Скидка 10%-->
+        <div class="discount">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

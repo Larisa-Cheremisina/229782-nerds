@@ -19,7 +19,7 @@ h2 {
   line-height: 36px;
   color: black;
   font-weight: normal;
-  font-family: "Arial", sans-serif;
+  font-family: "Myriad Pro", sans-serif;
 }
                   /* Стили для хедера */
 .main-header .container {
@@ -44,7 +44,23 @@ h2 {
 }
                   /* Стили для слайдера */
 .slider {
-  width: auto;
+  width: auto;;
   min-height: 300px;
+  border: 2px solid black;
+}
+
+.slider-text {
+  float: left;
+  width: 250px;
+  min-height: 69px;
+  margin-left: 182px;
+}
+
+.slider img {
+  display: inline-block;
+  margin-left: 211px;
+}
+                    /* Стили для основного содержания */
+.container {
   border: 2px solid black;
 }

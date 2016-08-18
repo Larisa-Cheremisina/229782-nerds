@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 30px;;
+  font-size: 30px;
   line-height: 5px;
   color: black;
   font-weight: normal;
@@ -20,4 +20,31 @@ h2 {
   color: black;
   font-weight: normal;
   font-family: "Arial", sans-serif;
+}
+                  /* Стили для хедера */
+.main-header .container {
+  width: auto;
+  min-height: 100px;
+  border: 2px solid black;
+}
+
+.logo {
+  float: left;
+  margin-left: 160px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 45px;
+  font-size: 10px;
+}
+
+.main-navigation li:nth-child(1) {
+  margin-left: 182px;
+}
+                  /* Стили для слайдера */
+.slider {
+  width: auto;
+  min-height: 300px;
+  border: 2px solid black;
 }

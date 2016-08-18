@@ -7,8 +7,8 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 5px;
+  font-size: 40px;
+  line-height: 38px;
   color: black;
   font-weight: normal;
   font-family: "Arial", sans-serif;
@@ -23,7 +23,7 @@ h2 {
 }
                   /* Стили для хедера */
 .main-header .container {
-  width: auto;
+  width: 1200px;
   min-height: 100px;
   border: 2px solid black;
 }
@@ -35,6 +35,7 @@ h2 {
 
 .main-navigation li {
   display: inline-block;
+  vertical-align: top;
   margin-right: 45px;
   font-size: 10px;
 }
@@ -44,7 +45,7 @@ h2 {
 }
                   /* Стили для слайдера */
 .slider {
-  width: auto;;
+  width: 1200px;
   min-height: 300px;
   border: 2px solid black;
 }
@@ -57,10 +58,62 @@ h2 {
 }
 
 .slider img {
-  display: inline-block;
+  float: left;
   margin-left: 211px;
 }
                     /* Стили для основного содержания */
 .container {
+  width: 1200px;
   border: 2px solid black;
+}
+
+.product-list {
+  width: 1200px;
+}
+
+.goods {
+  float: left;
+  width: 240px;
+  height: 300px;
+  margin-left: 182px;
+  margin-right: -102px;
+}
+
+.info-studio {
+  width: 1200px;
+  border: 2px solid black;
+}
+
+.block-left {
+  display: inline-block;
+  vertical-align: top;
+  width: 570px;
+  min-height: 325px;
+  margin-left: 182px;
+  margin-right: 67px;
+}
+
+.block-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.big-logo {
+  margin-bottom: 100px;
+}
+
+.big-logo .creation-year {
+  border: 2px solid red;
+}
+
+.logo-links {
+  width: 1200px;
+  min-height: 167px;
+  padding-
+}
+
+.logo-links a:nth-child(1n) {
+  float: left;
+  margin-left: 182px;
+  margin-right: -50px;
 }

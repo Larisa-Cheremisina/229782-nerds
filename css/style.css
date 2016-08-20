@@ -3,15 +3,24 @@ body {
   line-height: 22px;
   color: black;
   font-weight: normal;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 880px;
 }
 
 h1 {
+  width: 651px;
+  min-height: 78px;
+  margin-left: 108px;
   font-size: 40px;
   line-height: 38px;
   color: black;
   font-weight: normal;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h2 {
@@ -19,33 +28,36 @@ h2 {
   line-height: 36px;
   color: black;
   font-weight: normal;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
                   /* Стили для хедера */
 .main-header .container {
-  width: 1200px;
+  width: 880px;
   min-height: 100px;
   border: 2px solid black;
 }
 
 .logo {
   float: left;
-  margin-left: 160px;
 }
 
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
-  margin-right: 45px;
+  margin-left: 45px;
   font-size: 10px;
 }
 
 .main-navigation li:nth-child(1) {
   margin-left: 182px;
 }
+
+.main-navigation li:nth-child(5) {
+  margin-right: -165px;
+}
                   /* Стили для слайдера */
 .slider {
-  width: 1200px;
+  width: 880px;
   min-height: 300px;
   border: 2px solid black;
 }
@@ -54,16 +66,14 @@ h2 {
   float: left;
   width: 250px;
   min-height: 69px;
-  margin-left: 182px;
 }
 
 .slider img {
-  float: left;
-  margin-left: 211px;
+  float: right;
 }
                     /* Стили для основного содержания */
 .container {
-  width: 1200px;
+  width: 880px;
   border: 2px solid black;
 }
 
@@ -75,12 +85,12 @@ h2 {
   float: left;
   width: 240px;
   height: 300px;
-  margin-left: 182px;
-  margin-right: -102px;
+  margin-right: 80px;
+  margin-top: 80px;
 }
 
 .info-studio {
-  width: 1200px;
+  width: 880px;
   border: 2px solid black;
 }
 
@@ -89,8 +99,6 @@ h2 {
   vertical-align: top;
   width: 570px;
   min-height: 325px;
-  margin-left: 182px;
-  margin-right: 67px;
 }
 
 .block-right {
@@ -99,21 +107,109 @@ h2 {
 }
 
 .big-logo {
-  margin-bottom: 100px;
+  margin-bottom: 85px;
+  margin-right: -60px;
 }
 
 .big-logo .creation-year {
-  border: 2px solid red;
+  width: 86px;
+  min-height: 13px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .logo-links {
-  width: 1200px;
+  width: 880px;
   min-height: 167px;
-  padding-
+  padding-top: 70px;
 }
 
 .logo-links a:nth-child(1n) {
   float: left;
-  margin-left: 182px;
-  margin-right: -50px;
+  margin-right: 120px;
+}
+
+.logo-links a:last-child {
+  margin-right: 0;
+}
+
+.maps {
+  width: 1200px;
+  min-height: 416px;
+  margin-left: -160px;
+
+}
+
+.address-window {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  min-height: 240px;
+  border: 2px solid black;
+}
+
+              /* Стили для боковой колонки */
+.sidebar {
+  float: left;
+  width: 240px;
+  min-hight: 725px;
+  margin-top: 50px;
+}
+
+
+.sorting li {
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 45px;
+}
+
+.sorting li:first-child {
+  margin-left: -5px;
+}
+
+.sort-by {
+  float: left;
+  margin-top: 35px;
+  margin-right: -40px;
+  margin-left: 80px;
+}
+
+.catalog-img {
+  width: 560px;
+  min-height: 1120px;
+  border: 2px solid black;
+  margin-left: 320px;
+}
+
+.layout {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pagination {
+  width: 284px;
+  margin-left: 250px;
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 9px;
+}
+            /* Стили для футера */
+.main-footer .container {
+  width: 880px;
+  min-height: 200px;
+  border: 2px solid black;
+}
+
+.footer-social {
+  float: left;
+  margin-top: 76px;
+  width: 240px;
+  min-height: 60px;
+}
+
+.discount {
+  float: right;
 }

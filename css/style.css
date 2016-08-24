@@ -1,26 +1,28 @@
+@import {
+  src: 'https://fonts.googleapis.com/css?family=Roboto';
+}
 body {
   font-size: 16px;
   line-height: 22px;
   color: black;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 
-.main-container {
+/*.main-container {
   margin: 0 auto;
   width: 880px;
-}
+}*/
 
 h1 {
   width: 651px;
   min-height: 78px;
-  margin-left: 108px;
   font-size: 40px;
   line-height: 38px;
   color: black;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 h2 {
@@ -30,15 +32,31 @@ h2 {
   font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
-                  /* Стили для хедера */
-.main-header .container {
+
+.container {
   width: 880px;
+  margin: 0 auto;
+}
+
+.box {
+  margin: 0 auto;
+  width: 880px;
+  background-color: #25a86c;
+
+}
+                  /* Стили для хедера */
+.main-header {
   min-height: 100px;
-  border: 2px solid black;
+  background-color: #ee4b6d;
 }
 
 .logo {
   float: left;
+  width: 139px;
+}
+
+.main-navigation {
+  margin-left: 380px;
 }
 
 .main-navigation li {
@@ -48,19 +66,7 @@ h2 {
   font-size: 10px;
 }
 
-.main-navigation li:nth-child(1) {
-  margin-left: 182px;
-}
-
-.main-navigation li:nth-child(5) {
-  margin-right: -165px;
-}
                   /* Стили для слайдера */
-.slider {
-  width: 880px;
-  min-height: 300px;
-  border: 2px solid black;
-}
 
 .slider-text {
   float: left;
@@ -70,16 +76,19 @@ h2 {
 
 .slider img {
   float: right;
-}
-                    /* Стили для основного содержания */
-.container {
-  width: 880px;
-  border: 2px solid black;
+  width: 338px;
 }
 
-.product-list {
-  width: 1200px;
+.slider {
+  min-height: 300px;
+  background-color: #7a7676;
 }
+
+                  /* Стили для заголовка */
+.title {
+  text-align: center;
+}
+                  /* Стили для основного содержания */
 
 .goods {
   float: left;
@@ -89,9 +98,8 @@ h2 {
   margin-top: 80px;
 }
 
-.info-studio {
-  width: 880px;
-  border: 2px solid black;
+.product-list .goods:last-child {
+  margin-right: 0;
 }
 
 .block-left {
@@ -104,55 +112,65 @@ h2 {
 .block-right {
   display: inline-block;
   vertical-align: top;
+  margin-left: 60px;
 }
 
 .big-logo {
+  float: right;
+  width: 187px;
   margin-bottom: 85px;
-  margin-right: -60px;
+  margin-left: 30px;
 }
 
 .big-logo .creation-year {
   width: 86px;
+  text-align: center;
   min-height: 13px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 20px;
+  margin-bottom: -15px;
 }
 
 .logo-links {
-  width: 880px;
   min-height: 167px;
   padding-top: 70px;
 }
 
-.logo-links a:nth-child(1n) {
+.logo-links a:first-child {
   float: left;
+  width: 198px;
   margin-right: 120px;
 }
 
+.logo-links a:nth-child(2) {
+  float: left;
+  width: 199px;
+}
+
 .logo-links a:last-child {
+  float: right;
+  width: 209px;
   margin-right: 0;
 }
 
-.maps {
+                /* Стили для карты */
+/*.maps {
   width: 1200px;
   min-height: 416px;
-  margin-left: -160px;
-
-}
+  background-color: #c6f555;
+}*/
 
 .address-window {
   display: inline-block;
   vertical-align: top;
   width: 250px;
   min-height: 240px;
-  border: 2px solid black;
 }
 
               /* Стили для боковой колонки */
 .sidebar {
   float: left;
   width: 240px;
-  min-hight: 725px;
   margin-top: 50px;
 }
 
@@ -169,15 +187,20 @@ h2 {
 
 .sort-by {
   float: left;
+  width: 87px;
   margin-top: 35px;
   margin-right: -40px;
   margin-left: 80px;
 }
 
+.catalog-layout {
+  float: right;
+  width: 560px;
+}
+
 .catalog-img {
   width: 560px;
   min-height: 1120px;
-  border: 2px solid black;
   margin-left: 320px;
 }
 
@@ -197,19 +220,24 @@ h2 {
   margin-left: 9px;
 }
             /* Стили для футера */
-.main-footer .container {
-  width: 880px;
+.main-footer {
   min-height: 200px;
-  border: 2px solid black;
+  background-color: #ee4b6d;
 }
 
 .footer-social {
   float: left;
-  margin-top: 76px;
   width: 240px;
+  margin-top: 76px;
   min-height: 60px;
 }
 
 .discount {
   float: right;
+  width: 540px;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
 }

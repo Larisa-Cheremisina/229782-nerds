@@ -6,17 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-                  <!--Хедер-->
+
     <div class="main-container">
 
+                  <!--Хедер-->
     <header class="main-header">
 
     <div class="container">
                   <!--Логотип в хедере-->
-      <div class="logo">
-        <a href="#">
+        <div class="logo clearfix">
           <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
-        </a>
       </div>
                   <!--Навигационное меню-->
         <nav class="main-navigation">
@@ -38,12 +37,17 @@
             </li>
           </ul>
         </nav>
+
       </div>
 
     </header>
 
                   <!--Слайдер-->
-    <div class="slider container">
+    <div class="slider">
+      <div class="container">
+
+      <div class="clearfix">
+
       <div class="slider-text">
         <h2>Долго, дорого, скрупулезно</h2>
           <p>
@@ -52,14 +56,17 @@
         </p>
         <a href="#">Узнать больше</a>
       </div>
-      <img src="img/display.png" width="340" height="230" alt="Экраны">
+      <img src="img/display.png" width="340" height="230" alt="Экраны" class="clearfix">
+
+      </div>
+      </div>
     </div>
 
                   <!--Основное содержание-->
-    <main class="container">
+    <main class="box">
 
                   <!--Продукция студии-->
-      <div class="product-list">
+      <div class="product-list clearfix">
 
                   <!--Веб-сайты-->
         <div class="product-website goods">
@@ -124,11 +131,11 @@
 
           <div class="block-right">
 
-            <div class="big-logo">
+            <div class="big-logo clearfix">
               <img src="img/logo.png" width="187" height="75" alt="Большой логотип">
               <div class="creation-year">Since 2004</div>
             </div>
-
+            <div class="out-work">
             <h3>Как мы работаем:</h3>
             <ul>
               <li>
@@ -141,12 +148,13 @@
                 По предоплате 50%
               </li>
             </ul>
+            </div>
           </div>
 
       </div>
 
                     <!--Ссылки-логотипы-->
-      <div class="logo-links">
+      <div class="logo-links clearfix">
         <a href="#">
           <img src="img/glukhanko2.png" width="198" height="37" alt="Glukhanko">
         </a>
@@ -162,6 +170,8 @@
 
                     <!--Студия на карте-->
     <div class="maps">
+      <div class="container">
+
       <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
       <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
@@ -180,13 +190,15 @@
           Напишите нам
         </a>
       </div>
+
+      </div>
     </div>
                     <!--Футер-->
     <footer class="main-footer">
       <div class="container">
 
                     <!--Ссылки на соц. сети-->
-        <div class="footer-social">
+        <div class="footer-social clearfix">
           <a href="#">
             ВКонтакте
           </a>
@@ -199,7 +211,7 @@
         </div>
 
                     <!--Скидка 10%-->
-        <div class="discount">
+        <div class="discount clearfix">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>

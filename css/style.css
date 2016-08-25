@@ -36,7 +36,8 @@ h2 {
                   /* Стили для хедера */
 .main-header {
   min-height: 100px;
-  background-color: #ee4b6d;
+  padding-top: 27px;
+  background-color: #eeeeee;
 }
 
 .logo {
@@ -53,10 +54,25 @@ h2 {
   display: inline-block;
   vertical-align: top;
   margin-left: 45px;
-  font-size: 10px;
+  font-size: 0;
+}
+
+.main-navigation a {
+  font-size: 12px;
+  color: black;
+  
 }
 
                   /* Стили для слайдера */
+
+.slider-text a {
+  width: 99px;
+  min-height: 9px;
+  /*padding-left: 70px;
+  padding-top: 15px;
+  padding-right: 70px;
+  padding-bottom: 15px;*/
+}
 
 .slider-text {
   float: left;
@@ -70,7 +86,7 @@ h2 {
 
 .slider {
   min-height: 300px;
-  background-color: #7a7676;
+  background-color: #eeeeee;
 }
 
                   /* Стили для заголовка */
@@ -78,10 +94,6 @@ h2 {
   text-align: center;
 }
                   /* Стили для основного содержания */
-
-main {
-  background-color: #38af67;
-}
 
 .goods {
   float: left;
@@ -93,6 +105,45 @@ main {
 
 .product-list .goods:last-child {
   margin-right: 0;
+}
+
+.product-website a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #fb565a;
+  color: white;
+  border-radius: 5px;
+}
+
+.product-apps a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #00ca74;
+  color: white;
+  border-radius: 5px;
+}
+
+.product-presentation a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #efc84a;
+  color: white;
+  border-radius: 5px;
 }
 
 .block-left {
@@ -181,6 +232,8 @@ main {
 
 .sorting li {
   display: inline-block;
+  vertical-align: top;
+  color: #b7b7b7;
   margin-top: 35px;
   margin-left: 45px;
 }
@@ -200,18 +253,18 @@ main {
   width: 560px;
 }
 
-.catalog-img {
+.catalog-images {
   width: 560px;
   min-height: 1120px;
   margin-left: 320px;
 }
 
-.layout {
+.catalog-image {
   display: inline-block;
   vertical-align: top;
 }
 
-.window-on-img {
+.catalog-image-desc {
   width: 200px;
   min-height: 200px;
   text-align: center;
@@ -219,37 +272,37 @@ main {
 }
 
 /*
-.layout .window-1 {
+.catalog-image .window-1 {
   position: relative;
   bottom: 255px;
   left: 20px;
 }
 
-.layout .window-2 {
+.catalog-image .window-2 {
   position: relative;
   bottom: 255px;
   left: 20px;
 }
 
-.layout .window-3 {
+.catalog-image .window-3 {
   position: relative;
   bottom: 255px;
   left: 20px;
 }
 
-.layout .window-4 {
+.catalog-image .window-4 {
   position: relative;
   bottom: 255px;
   left: 20px;
 }
 
-.layout .window-5 {
+.catalog-image .window-5 {
   position: relative;
   bottom: 255px;
   left: 20px;
 }
 
-.layout .window-6 {
+.catalog-image .window-6 {
   position: relative;
   bottom: 255px;
   left: 20px;

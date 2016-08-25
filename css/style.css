@@ -182,15 +182,13 @@ h2 {
 }
 
 .sorting li:first-child {
-  margin-left: -5px;
+  margin-right: 5px;
 }
 
 .sort-by {
   float: left;
   width: 87px;
   margin-top: 35px;
-  margin-right: -40px;
-  margin-left: 80px;
 }
 
 .catalog-layout {
@@ -208,6 +206,50 @@ h2 {
   display: inline-block;
   vertical-align: top;
 }
+
+.window-on-img {
+  width: 200px;
+  min-height: 200px;
+  text-align: center;
+  background-color: white;
+}
+
+/*
+.layout .window-1 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.layout .window-2 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.layout .window-3 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.layout .window-4 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.layout .window-5 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.layout .window-6 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+} */
 
 .pagination {
   width: 284px;

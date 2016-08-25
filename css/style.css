@@ -9,11 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*.main-container {
-  margin: 0 auto;
-  width: 880px;
-}*/
-
 h1 {
   width: 651px;
   min-height: 78px;
@@ -38,12 +33,6 @@ h2 {
   margin: 0 auto;
 }
 
-.box {
-  margin: 0 auto;
-  width: 880px;
-  background-color: #25a86c;
-
-}
                   /* Стили для хедера */
 .main-header {
   min-height: 100px;
@@ -56,7 +45,8 @@ h2 {
 }
 
 .main-navigation {
-  margin-left: 380px;
+  float: right;
+  width: 560px;
 }
 
 .main-navigation li {
@@ -71,7 +61,6 @@ h2 {
 .slider-text {
   float: left;
   width: 250px;
-  min-height: 69px;
 }
 
 .slider img {
@@ -90,6 +79,10 @@ h2 {
 }
                   /* Стили для основного содержания */
 
+main {
+  background-color: #38af67;
+}
+
 .goods {
   float: left;
   width: 240px;
@@ -103,15 +96,14 @@ h2 {
 }
 
 .block-left {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   width: 570px;
   min-height: 325px;
 }
 
 .block-right {
-  display: inline-block;
-  vertical-align: top;
+  float: right;
+  width: 240px;
   margin-left: 60px;
 }
 
@@ -134,23 +126,31 @@ h2 {
 .logo-links {
   min-height: 167px;
   padding-top: 70px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .logo-links a:first-child {
-  float: left;
-  width: 198px;
-  margin-right: 120px;
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
+  margin-right: 122px;
+  padding-left: 12px;
 }
 
 .logo-links a:nth-child(2) {
-  float: left;
-  width: 199px;
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
+  margin-right: 122px;
 }
 
 .logo-links a:last-child {
-  float: right;
-  width: 209px;
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
   margin-right: 0;
+  padding-right: 12px;
 }
 
                 /* Стили для карты */
@@ -159,6 +159,10 @@ h2 {
   min-height: 416px;
   background-color: #c6f555;
 }*/
+
+.map-img {
+  text-align: center;
+}
 
 .address-window {
   display: inline-block;

@@ -7,16 +7,14 @@
   </head>
   <body>
 
-    <div class="main-container">
-
                   <!--Хедер-->
     <header class="main-header">
 
-    <div class="container">
+    <div class="container clearfix">
                   <!--Логотип в хедере-->
-        <div class="logo clearfix">
+        <div class="logo">
           <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
-      </div>
+        </div>
                   <!--Навигационное меню-->
         <nav class="main-navigation">
           <ul>
@@ -44,9 +42,7 @@
 
                   <!--Слайдер-->
     <div class="slider">
-      <div class="container">
-
-      <div class="clearfix">
+      <div class="container clearfix">
 
       <div class="slider-text">
         <h2>Долго, дорого, скрупулезно</h2>
@@ -59,11 +55,10 @@
       <img src="img/display.png" width="340" height="230" alt="Экраны" class="clearfix">
 
       </div>
-      </div>
     </div>
 
                   <!--Основное содержание-->
-    <main class="box">
+    <main class="container">
 
                   <!--Продукция студии-->
       <div class="product-list clearfix">
@@ -170,35 +165,40 @@
 
                     <!--Студия на карте-->
     <div class="maps">
+      <div class="map-img">
+        <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
+      </div>
+
       <div class="container">
 
-      <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
-      <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
-      <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
-
+        <div class="map-address">
+          <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
+          <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
                   <!--Адресное окно-->
-      <div class="address-window">
-        <h3>Nёrds design studio</h3>
-        <p>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, дю 19/8
-        </p>
-        <p>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a href="#">
-          Напишите нам
-        </a>
-      </div>
+        <div class="address-window">
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, дю 19/8
+          </p>
+          <p>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#">
+            Напишите нам
+          </a>
+        </div>
+        </div>
 
-      </div>
+        </div>
+
     </div>
                     <!--Футер-->
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
 
                     <!--Ссылки на соц. сети-->
-        <div class="footer-social clearfix">
+        <div class="footer-social">
           <a href="#">
             ВКонтакте
           </a>
@@ -211,7 +211,7 @@
         </div>
 
                     <!--Скидка 10%-->
-        <div class="discount clearfix">
+        <div class="discount">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
@@ -219,6 +219,5 @@
       </div>
     </footer>
 
-  </div>
   </body>
 </html>

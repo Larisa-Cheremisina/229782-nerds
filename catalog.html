@@ -6,17 +6,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  <div class="main-container">
-                  <!--Хедер-->
-    <div class="container">
 
+                  <!--Хедер-->
     <header class="main-header">
+
+    <div class="container clearfix">
                   <!--Логотип в хедере-->
-      <div class="logo">
-        <a href="#">
-          <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
-        </a>
-      </div>
+        <div class="logo">
+          <a href="#">
+            <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
+          </a>
+        </div>
                   <!--Навигационное меню-->
         <nav class="main-navigation">
           <ul>
@@ -37,21 +37,19 @@
             </li>
           </ul>
         </nav>
+      </div>
+
     </header>
 
-    </div>
-
                     <!--Заголовок-->
-    <div class="box-title">
-
     <div class="title">
-      <h1>Добро пожаловать в магазин готовых макетов</h1>
+      <div class="container">
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
+      </div>
     </div>
-
-  </div>
 
                     <!--Основное содержание-->
-    <main class="box">
+    <main class="container clearfix">
 
                     <!--Боковая колонка-->
       <div class="sidebar">
@@ -108,18 +106,19 @@
           </fieldset>
 
                       <!--Показать-->
-          <div class="show">
-            <a href="#">Показать</a>
-          </div>
+          <a href="#">Показать</a>
+
         </form>
       </div>
+
 
                       <!--Каталог макетов-->
       <div class="catalog-layout">
 
                       <!--Сортировка-->
-        <div class="sorting">
-          <div class="sort-by">Сортривать:</div>
+        <div class="sorting clearfix">
+            <div class="sort-by">Сортривать:</div>
+        </div>
           <ul>
             <li>
               <a href="#">По цене</a>
@@ -137,59 +136,79 @@
           </div>
 
         </div>
+      </div>
 
                         <!--Скриншоты макетов-->
-        <div class="catalog-img">
+        <div class="catalog-images">
 
                         <!--Макет-1-->
-          <div class="layout">
-            <a href="#">
+          <div class="catalog-image">
               <img src="img/maket-1.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+
+            <div class="catalog-image-desc">
+              <h2>Aviator</h2>
+              <p>Одностраничный макет с авторским дизайном</p>
+                <span class="price">8000 р.</span>
           </div>
 
-                        <!--Макет-2-->
-          <div class="layout">
-            <a href="#">
-              <img src="img/maket-2.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+         </div>
 
-            <div class="window-on-img">
+                        <!--Макет-2-->
+          <div class="catalog-image">
+              <img src="img/maket-2.jpg" width="240" height="240" alt="Макет-1" class="img">
+
+            <div class="catalog-image-desc">
               <h2>Sunset</h2>
               <p>Интернет-магазин с личным кабинетом</p>
-              <div class="price-layout">
-                <span class="price">1 0000 р.</span>
-             </div>
+                <span class="price">10000 р.</span>
             </div>
 
           </div>
 
                           <!--Макет-3-->
-          <div class="layout">
-            <a href="#">
+          <div class="catalog-image">
               <img src="img/maket-3.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+
+            <div class="catalog-image-desc">
+              <h2>Forte</h2>
+              <p>Отличный макет для личного блога</p>
+                <span class="price">5000 р.</span>
+            </div>
+
           </div>
 
                           <!--Макет-4-->
-          <div class="layout">
-            <a href="#">
+          <div class="catalog-image">
               <img src="img/maket-4.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+
+            <div class="catalog-image-desc">
+              <h2>Modern organic thai</h2>
+              <p>Сайт для ресторана быстрого питания</p>
+                <span class="price">12 000 р.</span>
+            </div>
+
           </div>
 
                           <!--Макет-5-->
-          <div class="layout">
-            <a href="#">
+          <div class="catalog-image">
               <img src="img/maket-5.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+
+            <div class="catalog-image-desc">
+              <h2>Avenue</h2>
+              <p>Макет для блога о путешествиях</p>
+                <span class="price">8000 р.</span>
+            </div>
+
           </div>
 
                           <!--Макет-6-->
-          <div class="layout">
-            <a href="#">
+          <div class="catalog-image">
               <img src="img/maket-6.jpg" width="240" height="240" alt="Макет-1" class="img">
-            </a>
+
+            <div class="catalog-image-desc">
+              <h2>Dovetail</h2>
+              <p>Интернет-магазин с галереей товаров</p>
+                <span class="price">14000 р.</span>
           </div>
 
         </div>
@@ -216,34 +235,39 @@
     </main>
 
                   <!--Студия на карте-->
-    <div class="container">
-
     <div class="maps">
-      <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
-      <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
-      <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
-                  <!--Адресное окно-->
-      <div class="address-window">
-        <h3>Nёrds design studio</h3>
-        <p>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, дю 19/8
-        </p>
-        <p>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a href="#">
-          Напишите нам
-        </a>
+      <div class="map-img">
+        <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
-    </div>
 
-    </div>
-                    <!--Футер-->
-    <div class="container">
-
-    <footer class="main-footer">
       <div class="container">
+
+        <div class="map-address">
+          <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
+          <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
+                  <!--Адресное окно-->
+        <div class="address-window">
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, дю 19/8
+          </p>
+          <p>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#">
+            Напишите нам
+          </a>
+        </div>
+        </div>
+
+        </div>
+
+    </div>
+
+                    <!--Футер-->
+    <footer class="main-footer">
+      <div class="container clearfix">
 
                     <!--Ссылки на соц. сети-->
         <div class="footer-social">
@@ -267,8 +291,5 @@
       </div>
     </footer>
 
-    </div>
-
-  </div>
   </body>
 </html>

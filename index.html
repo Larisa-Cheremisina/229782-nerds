@@ -7,17 +7,14 @@
   </head>
   <body>
 
-    <div class="main-container">
-
                   <!--Хедер-->
-    <div class="container">
-
     <header class="main-header">
 
+    <div class="container clearfix">
                   <!--Логотип в хедере-->
-      <div class="logo clearfix">
+        <div class="logo">
           <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
-      </div>
+        </div>
                   <!--Навигационное меню-->
         <nav class="main-navigation">
           <ul>
@@ -38,14 +35,15 @@
             </li>
           </ul>
         </nav>
+
+      </div>
+
     </header>
 
-    </div>
-
                   <!--Слайдер-->
-    <div class="container">
-
     <div class="slider">
+      <div class="container clearfix">
+
       <div class="slider-text">
         <h2>Долго, дорого, скрупулезно</h2>
           <p>
@@ -54,16 +52,16 @@
         </p>
         <a href="#">Узнать больше</a>
       </div>
-      <img src="img/display.png" width="340" height="230" alt="Экраны">
-    </div>
+      <img src="img/display.png" width="340" height="230" alt="Экраны" class="clearfix">
 
+      </div>
     </div>
 
                   <!--Основное содержание-->
-    <main class="box">
+    <main class="container">
 
                   <!--Продукция студии-->
-      <div class="product-list">
+      <div class="product-list clearfix">
 
                   <!--Веб-сайты-->
         <div class="product-website goods">
@@ -101,7 +99,7 @@
       </div>
 
                   <!--Информация о студии-->
-      <div class="info-studio">
+      <div class="info-studio clearfix">
 
           <div class="block-left">
             <h2>
@@ -121,18 +119,18 @@
                 Мобильных приложений для iOS и Android
               </li>
               <li>
-                Слайжшоу и видео для корпоративных презентаций
+                Слайдшоу и видео для корпоративных презентаций
               </li>
             </ul>
           </div>
 
           <div class="block-right">
 
-            <div class="big-logo">
+            <div class="big-logo clearfix">
               <img src="img/logo.png" width="187" height="75" alt="Большой логотип">
               <div class="creation-year">Since 2004</div>
             </div>
-
+            <div class="out-work">
             <h3>Как мы работаем:</h3>
             <ul>
               <li>
@@ -145,12 +143,13 @@
                 По предоплате 50%
               </li>
             </ul>
+            </div>
           </div>
 
       </div>
 
                     <!--Ссылки-логотипы-->
-      <div class="logo-links">
+      <div class="logo-links clearfix">
         <a href="#">
           <img src="img/glukhanko2.png" width="198" height="37" alt="Glukhanko">
         </a>
@@ -165,34 +164,38 @@
     </main>
 
                     <!--Студия на карте-->
-    <div class="container">
-
     <div class="maps">
-      <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
-      <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
-      <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
-
-                  <!--Адресное окно-->
-      <div class="address-window">
-        <h3>Nёrds design studio</h3>
-        <p>
-          191186, Санкт-Петербург,
-          ул. Б. Конюшенная, дю 19/8
-        </p>
-        <p>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a href="#">
-          Напишите нам
-        </a>
+      <div class="map-img">
+        <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
-    </div>
+
+      <div class="container">
+
+        <div class="map-address">
+          <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
+          <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
+                  <!--Адресное окно-->
+        <div class="address-window">
+          <h3>Nёrds design studio</h3>
+          <p>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, дю 19/8
+          </p>
+          <p>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#">
+            Напишите нам
+          </a>
+        </div>
+        </div>
+
+        </div>
 
     </div>
                     <!--Футер-->
-    <div class="container">
-
     <footer class="main-footer">
+      <div class="container clearfix">
 
                     <!--Ссылки на соц. сети-->
         <div class="footer-social">
@@ -213,11 +216,8 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
 
+      </div>
     </footer>
 
-  </div>
-
-
-  </div>
   </body>
 </html>

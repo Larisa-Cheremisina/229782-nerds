@@ -1,3 +1,6 @@
+@import {
+  src: 'https://fonts.googleapis.com/css?family=Roboto';
+}
 body {
   font-size: 16px;
   line-height: 22px;
@@ -6,20 +9,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main-container {
-  margin: 0 auto;
-  width: 880px;
-}
-
 h1 {
   width: 651px;
   min-height: 78px;
-  margin-left: 108px;
   font-size: 40px;
   line-height: 38px;
   color: black;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
+  margin: 0 auto;
 }
 
 h2 {
@@ -29,68 +27,73 @@ h2 {
   font-weight: normal;
   font-family: "Roboto", sans-serif;
 }
-                  /* Стили для хедера */
-.main-header  {
+
+.container {
   width: 880px;
+  margin: 0 auto;
+}
+
+                  /* Стили для хедера */
+.main-header {
   min-height: 100px;
-  background-color: #8092df;
+  padding-top: 27px;
+  background-color: #eeeeee;
 }
 
-.clearfix::after{
-  content: " ";
-  clear: both;
-}
-
-.logo img {
+.logo {
   float: left;
   width: 139px;
+}
+
+.main-navigation {
+  float: right;
+  width: 560px;
 }
 
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
   margin-left: 45px;
-  font-size: 10px;
+  font-size: 0;
 }
 
-.main-navigation li:nth-child(1) {
-  margin-left: 182px;
+.main-navigation a {
+  font-size: 12px;
+  color: black;
+  
 }
 
-.main-navigation li:nth-child(5) {
-  margin-right: -165px;
-}
                   /* Стили для слайдера */
-.slider {
-  width: 880px;
-  min-height: 300px;
-  background-color: #e76486;
-}
 
-.clearfix::after {
-  content: " ";
-  clear: both;
+.slider-text a {
+  width: 99px;
+  min-height: 9px;
+  /*padding-left: 70px;
+  padding-top: 15px;
+  padding-right: 70px;
+  padding-bottom: 15px;*/
 }
 
 .slider-text {
   float: left;
   width: 250px;
-  min-height: 69px;
 }
 
 .slider img {
   float: right;
   width: 338px;
 }
-                    /* Стили для основного содержания */
-.box {
-  width: 880px;
-  background-color: #a1f1c1;
+
+.slider {
+  min-height: 300px;
+  background-color: #eeeeee;
 }
 
-.product-list {
-  width: 880px;
+                  /* Стили для заголовка */
+.title {
+  text-align: center;
 }
+                  /* Стили для основного содержания */
 
 .goods {
   float: left;
@@ -100,70 +103,116 @@ h2 {
   margin-top: 80px;
 }
 
-.goods:last-child {
+.product-list .goods:last-child {
   margin-right: 0;
 }
 
-.info-studio {
-  width: 880px;
+.product-website a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #fb565a;
+  color: white;
+  border-radius: 5px;
+}
+
+.product-apps a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #00ca74;
+  color: white;
+  border-radius: 5px;
+}
+
+.product-presentation a {
+  width: 61px;
+  min-height: 9px;
+  padding-left: 38px;
+  padding-top: 13px;
+  padding-right: 38px;
+  padding-bottom: 13px;
+  text-decoration: none;
+  background-color: #efc84a;
+  color: white;
+  border-radius: 5px;
 }
 
 .block-left {
-  display: inline-block;
-  vertical-align: top;
+  float: left;
   width: 570px;
   min-height: 325px;
 }
 
 .block-right {
-  display: inline-block;
-  vertical-align: top;
+  float: right;
+  width: 240px;
+  margin-left: 60px;
 }
 
 .big-logo {
+  float: right;
+  width: 187px;
   margin-bottom: 85px;
-  margin-right: -60px;
+  margin-left: 30px;
 }
 
 .big-logo .creation-year {
   width: 86px;
+  text-align: center;
   min-height: 13px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 20px;
+  margin-bottom: -15px;
 }
 
 .logo-links {
-  width: 880px;
   min-height: 167px;
   padding-top: 70px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
-.logo-links a:nth-child(1) {
-  float: left;
-  width: 198px;
-  margin-right: 120px;
-  margin-left: 10px;
+.logo-links a:first-child {
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
+  margin-right: 122px;
+  padding-left: 12px;
 }
 
 .logo-links a:nth-child(2) {
-  width: 199px;
-  margin-left: 20px;
-}
-
-.logo-links a:nth-child(3) {
-  float: right;
-  width: 209px;
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
+  margin-right: 122px;
 }
 
 .logo-links a:last-child {
+  display: inline-block;
+  vertical-align: top;
+  width: 204px;
   margin-right: 0;
+  padding-right: 12px;
 }
 
-.maps {
+                /* Стили для карты */
+/*.maps {
   width: 1200px;
   min-height: 416px;
-  margin-left: -160px;
+  background-color: #c6f555;
+}*/
 
+.map-img {
+  text-align: center;
 }
 
 .address-window {
@@ -177,39 +226,87 @@ h2 {
 .sidebar {
   float: left;
   width: 240px;
-  min-height: 725px;
   margin-top: 50px;
 }
 
 
 .sorting li {
   display: inline-block;
+  vertical-align: top;
+  color: #b7b7b7;
   margin-top: 35px;
   margin-left: 45px;
 }
 
 .sorting li:first-child {
-  margin-left: 85px;
+  margin-right: 5px;
 }
 
 .sort-by {
   float: left;
   width: 87px;
   margin-top: 35px;
-  margin-right: -40px;
-  margin-left: 80px;
 }
 
-.catalog-img {
+.catalog-layout {
+  float: right;
+  width: 560px;
+}
+
+.catalog-images {
   width: 560px;
   min-height: 1120px;
   margin-left: 320px;
 }
 
-.layout {
+.catalog-image {
   display: inline-block;
   vertical-align: top;
 }
+
+.catalog-image-desc {
+  width: 200px;
+  min-height: 200px;
+  text-align: center;
+  background-color: white;
+}
+
+/*
+.catalog-image .window-1 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.catalog-image .window-2 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.catalog-image .window-3 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.catalog-image .window-4 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.catalog-image .window-5 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+}
+
+.catalog-image .window-6 {
+  position: relative;
+  bottom: 255px;
+  left: 20px;
+} */
 
 .pagination {
   width: 284px;
@@ -223,9 +320,8 @@ h2 {
 }
             /* Стили для футера */
 .main-footer {
-  width: 880px;
   min-height: 200px;
-  background-color: #8092df;
+  background-color: #ee4b6d;
 }
 
 .footer-social {
@@ -238,4 +334,9 @@ h2 {
 .discount {
   float: right;
   width: 540px;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
 }

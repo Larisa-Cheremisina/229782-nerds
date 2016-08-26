@@ -4,7 +4,6 @@ body {
   color: black;
   font-weight: normal;
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 
 .main-container {
@@ -31,14 +30,20 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
                   /* Стили для хедера */
-.main-header .container {
+.main-header  {
   width: 880px;
   min-height: 100px;
-  border: 2px solid black;
+  background-color: #8092df;
 }
 
-.logo {
+.clearfix::after{
+  content: " ";
+  clear: both;
+}
+
+.logo img {
   float: left;
+  width: 139px;
 }
 
 .main-navigation li {
@@ -59,7 +64,12 @@ h2 {
 .slider {
   width: 880px;
   min-height: 300px;
-  border: 2px solid black;
+  background-color: #e76486;
+}
+
+.clearfix::after {
+  content: " ";
+  clear: both;
 }
 
 .slider-text {
@@ -70,15 +80,16 @@ h2 {
 
 .slider img {
   float: right;
+  width: 338px;
 }
                     /* Стили для основного содержания */
-.container {
+.box {
   width: 880px;
-  border: 2px solid black;
+  background-color: #a1f1c1;
 }
 
 .product-list {
-  width: 1200px;
+  width: 880px;
 }
 
 .goods {
@@ -89,9 +100,12 @@ h2 {
   margin-top: 80px;
 }
 
+.goods:last-child {
+  margin-right: 0;
+}
+
 .info-studio {
   width: 880px;
-  border: 2px solid black;
 }
 
 .block-left {
@@ -124,9 +138,21 @@ h2 {
   padding-top: 70px;
 }
 
-.logo-links a:nth-child(1n) {
+.logo-links a:nth-child(1) {
   float: left;
+  width: 198px;
   margin-right: 120px;
+  margin-left: 10px;
+}
+
+.logo-links a:nth-child(2) {
+  width: 199px;
+  margin-left: 20px;
+}
+
+.logo-links a:nth-child(3) {
+  float: right;
+  width: 209px;
 }
 
 .logo-links a:last-child {
@@ -145,14 +171,13 @@ h2 {
   vertical-align: top;
   width: 250px;
   min-height: 240px;
-  border: 2px solid black;
 }
 
               /* Стили для боковой колонки */
 .sidebar {
   float: left;
   width: 240px;
-  min-hight: 725px;
+  min-height: 725px;
   margin-top: 50px;
 }
 
@@ -164,11 +189,12 @@ h2 {
 }
 
 .sorting li:first-child {
-  margin-left: -5px;
+  margin-left: 85px;
 }
 
 .sort-by {
   float: left;
+  width: 87px;
   margin-top: 35px;
   margin-right: -40px;
   margin-left: 80px;
@@ -177,7 +203,6 @@ h2 {
 .catalog-img {
   width: 560px;
   min-height: 1120px;
-  border: 2px solid black;
   margin-left: 320px;
 }
 
@@ -197,19 +222,20 @@ h2 {
   margin-left: 9px;
 }
             /* Стили для футера */
-.main-footer .container {
+.main-footer {
   width: 880px;
   min-height: 200px;
-  border: 2px solid black;
+  background-color: #8092df;
 }
 
 .footer-social {
   float: left;
-  margin-top: 76px;
   width: 240px;
+  margin-top: 76px;
   min-height: 60px;
 }
 
 .discount {
   float: right;
+  width: 540px;
 }

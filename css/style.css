@@ -50,28 +50,63 @@ h2 {
   width: 560px;
 }
 
+.main-navigation ul {
+  margin-left: 20px;
+}
+
 .main-navigation li {
   display: inline-block;
   vertical-align: top;
   margin-left: 45px;
   font-size: 0;
+  margin-top: 15px;
+  /*margin-left: -55px;
+  font-size: 12px;*/
+}
+.main-navigation li:first-child {
+  margin-left: -53px;
+}
+
+.main-navigation li:last-child {
+  margin-left: 107px;
 }
 
 .main-navigation a {
   font-size: 12px;
   color: black;
-
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
                   /* Стили для слайдера */
+.slider-text h2 {
+  width: 265px;
+  min-height:70px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.slider p {
+  width: 380px;
+  color: #283136;
+  font-weight: bold;
+  font-size: 15.5px;
+  margin-bottom: 16px;
+}
 
 .slider-text a {
-  width: 99px;
-  min-height: 9px;
-  /*padding-left: 70px;
-  padding-top: 15px;
+  display: inline-block;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding-left: 70px;
+  padding-top: 8px;
   padding-right: 70px;
-  padding-bottom: 15px;*/
+  padding-bottom: 8px;
+  background-color: #fb565a;
+  border-radius: 4px;
+  color: white;
 }
 
 .slider-text {
@@ -82,10 +117,11 @@ h2 {
 .slider img {
   float: right;
   width: 338px;
+  margin-top: 8px;
 }
 
 .slider {
-  min-height: 300px;
+  min-height: 330px;
   background-color: #eeeeee;
 }
 
@@ -101,6 +137,10 @@ h2 {
   height: 300px;
   margin-right: 80px;
   margin-top: 80px;
+}
+
+.goods img {
+  margin-top: 10px;
 }
 
 .product-list .goods:last-child {
@@ -205,12 +245,6 @@ h2 {
 }
 
                 /* Стили для карты */
-/*.maps {
-  width: 1200px;
-  min-height: 416px;
-  background-color: #c6f555;
-}*/
-
 .map-img {
   text-align: center;
 }
@@ -248,6 +282,12 @@ h2 {
   margin-top: 35px;
 }
 
+.drop-down-list {
+  width: 28px;
+  min-height: 10px;
+  background-color: #00ca74;
+}
+
 .catalog-layout {
   float: right;
   width: 560px;
@@ -256,7 +296,6 @@ h2 {
 .catalog-images {
   width: 560px;
   min-height: 1120px;
-  margin-left: 320px;
 }
 
 .catalog-image {

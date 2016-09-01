@@ -10,7 +10,6 @@ body {
 }
 
 h1 {
-  width: 651px;
   min-height: 78px;
   font-size: 40px;
   line-height: 47px;
@@ -99,7 +98,7 @@ h2 {
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 11px;
   padding-left: 70px;
   padding-top: 8px;
   padding-right: 70px;
@@ -127,20 +126,19 @@ h2 {
 
                   /* Стили для заголовка */
 .title {
-  text-align: center;
   background-color: #eeeeee;
 }
 
 h1 {
-  width: 700px;
   text-transform: uppercase;
   line-height: 47px;
   font-weight: bold;
   font-size: 40px;
   padding-top: 23px;
   padding-bottom: 84px;
-  margin-right: 73px;
+  margin: 0 auto;
 }
+
                   /* Стили для основного содержания */
 
 .goods {
@@ -234,6 +232,18 @@ h1 {
   font-weight: bold;
   margin-bottom: 22px;
   color: #283136;
+  list-style: none;
+  position: relative;
+}
+
+.block-left li::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fb565a no-repeat left top;
+  position: absolute;
+  left: -36px;
+  top: 11px;
 }
 
 .block-right {
@@ -256,6 +266,18 @@ h1 {
   margin-bottom: 22px;
   margin-top: 21px;
   color: 283136;
+  list-style: none;
+  position: relative;
+}
+
+.block-right li::before {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background: #fb565a no-repeat left top;
+  position: absolute;
+  left: -36px;
+  top: 11px;
 }
 
 .block-right ul {
@@ -283,6 +305,7 @@ h1 {
   width: 230px;
 }
 
+                /* Стили для ссылок-логотипов */
 .logo-links {
   min-height: 167px;
   padding-top: 70px;
@@ -317,6 +340,19 @@ h1 {
   margin-left: -8px;
   margin-bottom: 112px;
   padding-right: 12px;
+}
+
+.links {
+  margin: 0 -38px;
+}
+
+.link {
+  display: inline-block;
+  width: 204px;
+  height: 86px;
+  line-height: 86px;
+  text-align: center;
+  margin: 0 38px;
 }
 
                 /* Стили для карты */
@@ -404,17 +440,24 @@ h1 {
   margin-top: 50px;
 }
 
-              /* Стили для осн. содерж. каталога */
-
-.sorting ul {
-
+.sidebar fieldset {
+  border: none;
 }
+
+.sidebar-price legend,
+.sidebar-grid legend,
+.sidebar-feature legend {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+              /* Стили для осн. содерж. каталога */
 
 .sorting li {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
-  margin-top: 35px;
+  margin-top: 58px;
 }
 
 .sorting a {
@@ -426,7 +469,12 @@ h1 {
 }
 
 .sorting li:first-child {
-  margin-right: 5px;
+  margin-right: -8px;
+  margin-left: -5px;
+}
+
+.sorting li:last-child {
+  margin-left: -5px;
 }
 
 .sorting {
@@ -476,45 +524,62 @@ h1 {
   background-color: white;
 }
 
-.catalog-image .window-1 {
+.catalog-image .window {
   position: absolute;
   bottom: 26px;
   left: 20px;
 }
 
-.catalog-image .window-2 {
-  position: absolute;
-  bottom: 26px;
-  left: 20px;
+.window h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.catalog-image .window-3 {
-  position: absolute;
-  bottom: 26px;
-  left: 20px;
+.window p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #283136;
 }
 
-.catalog-image .window-4 {
-  position: absolute;
-  bottom: 26px;
-  left: 20px;
-}
-
-.catalog-image .window-5 {
-  position: absolute;
-  bottom: 26px;
-  left: 20px;
-}
-
-.catalog-image .window-6 {
-  position: absolute;
-  bottom: 26px;
-  left: 20px;
+.window .price {
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  background-color: #fb565a;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 4px;
 }
 
 .pagination {
-  width: 284px;
-  margin-left: 250px;
+  width: 330px;
+  margin-left: -36px;
+}
+
+.pagination a {
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-right: 15px;
+  padding-bottom: 13px;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pagination a:first-child {
+  padding-left: 13px;
+  padding-top: 13px;
+  padding-right: 13px;
+  padding-bottom: 11px;
+  background-color: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 3px;
 }
 
 .pagination li {
@@ -532,6 +597,13 @@ h1 {
   width: 240px;
   margin-top: 76px;
   min-height: 60px;
+}
+
+.footer-social a {
+  width: 63px;
+  min-height: 64px;
+  background-color: #e1e1e1;
+  border-radius: 12px;
 }
 
 .discount {

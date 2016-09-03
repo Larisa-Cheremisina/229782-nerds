@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
@@ -18,7 +20,7 @@
                   <!--Навигационное меню-->
         <nav class="main-navigation">
           <ul>
-            <li>
+            <li class="active">
               <a href="#">Студия</a>
             </li>
             <li>
@@ -31,7 +33,7 @@
               <a href="#">Контакты</a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a href="#" class="ikon-sprite basket">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -177,7 +179,7 @@
         <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
 
-      <div class="container">
+      <div class="container map-container">
 
         <div class="map-address">
 
@@ -191,18 +193,17 @@
           </div>
                   <!--Адресное окно-->
         <div class="address-window">
-          <h3>Nёrds design studio</h3>
-          <p class="address">
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="number-telephone">
-            тел. +7 (812) 275-75-75
-          </p>
-          <a href="#">
-            Напишите нам
-          </a>
-        </div>
+            <h3>Nёrds design studio</h3>
+            <p class="address">
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="number-telephone">
+              тел. +7 (812) 275-75-75
+            </p>
+            <a href="#">
+              Напишите нам
+            </a>
         </div>
 
         </div>
@@ -214,14 +215,14 @@
 
                     <!--Ссылки на соц. сети-->
         <div class="footer-social">
-          <a href="#">
-            V
+          <a href="#" class="social-btn vk">
+            ВКонтакте
           </a>
-          <a href="#">
-            F
+          <a href="#" class="social-btn facebook">
+            facebook
           </a>
-          <a href="#">
-            I
+          <a href="#" class="social-btn instagram">
+            Instagram
           </a>
         </div>
 

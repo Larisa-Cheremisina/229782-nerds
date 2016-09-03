@@ -5,6 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
 
@@ -27,14 +28,14 @@
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
             </li>
             <li>
-              <a href="#">Корзина</a>
+              <a href="#" class="ikon-sprite basket">Корзина</a>
             </li>
           </ul>
         </nav>
@@ -61,58 +62,73 @@
                     <!--Стоимость-->
           <fieldset class="sidebar-price">
             <legend>Стоимость:</legend>
+          <div class="range-filter">
 
-            <label>
-              <input type="range" name="price">
-            </label>
-            <label>
-              От <input type="text" name="from" value="0">
-            </label>
-            <label>
-              До <input type="text" name="into" value="15000">
-            </label>
+            <div class="range-controls">
+              <div class="scale">
+                <div style="width: 70%;" class="bar">
+                </div>
+              </div>
+
+              <div class="toggle min-toggle">
+              </div>
+
+              <div class="toggle max-toggle">
+              </div>
+
+            </div>
+
+            <div class="price-controls">
+              <label class="min-price">
+                <span class="price-from">от</span>
+                  <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                <span class="price-into">до</span>
+                  <input type="text" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
           </fieldset>
 
                     <!--Сетка-->
           <fieldset class="sidebar-grid">
             <legend>Сетка:</legend>
 
-            <label>
-              Адаптивная <input type="checkbox" name="adaptive">
-            </label>
-            <label>
-              Фиксированная <input type="checkbox" name="fixed">
-            </label>
-            <label>
-              Резиновая <input type="checkbox" name="stretch">
-            <label>
+            <input type="checkbox" name="adaptive" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+
+            <input type="checkbox" name="fixed" id="fixed ">
+            <label for="fixed">Фиксированная</label>
+
+            <input type="checkbox" name="stretch" id="stretch">
+            <label for="stretch">Резиновая</label>
           </fieldset>
 
                     <!--Особенности-->
           <fieldset class="sidebar-feature">
             <legend>Особенности:</legend>
 
-            <label>
-              Слайдер <input type="checkbox" name="slider">
-            </label>
-            <label>
-              Блок преимуществ <input type="checkbox" name="block-advantages">
-            </label>
-            <label>
-              Новости <input type="checkbox" name="news">
-            </label>
-            <label>
-              Галерея <input type="checkbox" name="gallery">
-            </label>
-            <label>
-              Корзина <input type="checkbox" name="basket">
-            </label>
+            <input type="checkbox" name="slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
+
+            <input type="checkbox" name="block-advantages" id="block-advantages">
+            <label for="block-advantages">Блок преимуществ</label>
+
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
+
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+
+            <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Корзина</label>
           </fieldset>
 
-                      <!--Показать-->
-          <a href="#">Показать</a>
-
         </form>
+
+                      <!--Показать-->
+        <a href="#" class="show">Показать</a>
       </div>
 
 
@@ -120,7 +136,7 @@
       <div class="catalog-layout">
 
                       <!--Сортировка-->
-        <div class="sorting clearfix">
+        <div class="sorting">
             <div class="sort-by">Сортировать:</div>
           <ul>
             <li>
@@ -132,13 +148,16 @@
             <li>
               <a href="#">По функционалу</a>
             </li>
+            <li class="drop-down-list">
+              <div class="down">
+                <a href="#"></a>
+              </div>
+              <div class="up">
+                <a href="#"></a>
+              </div>
+            </li>
           </ul>
 
-                        <!--Выпадающий список-->
-          <div class="drop-down-list">
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
         </div>
 
                         <!--Скриншоты макетов-->
@@ -149,10 +168,13 @@
               <img src="img/maket-1.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Aviator</h2>
-              <p>Одностраничный макет с авторским дизайном</p>
+              <div class="window-position">
+                <h2>Aviator</h2>
+                <p>Одностраничный макет<br>
+                  с авторским дизайном</p>
                 <a class="price">8000 р.</a>
-          </div>
+            </div>
+            </div>
 
          </div>
 
@@ -161,9 +183,12 @@
               <img src="img/maket-2.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Sunset</h2>
-              <p>Интернет-магазин с личным кабинетом</p>
+              <div class="window-position">
+                <h2>Sunset</h2>
+                <p>Интернет-магазин<br>
+                  с личным кабинетом</p>
                 <a class="price">10000 р.</a>
+            </div>
             </div>
 
           </div>
@@ -173,9 +198,12 @@
               <img src="img/maket-3.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Forte</h2>
-              <p>Отличный макет для личного блога</p>
+              <div class="window-position">
+                <h2>Forte</h2>
+                <p>Отличный макет<br>
+                  для личного блога</p>
                 <a class="price">5000 р.</a>
+            </div>
             </div>
 
           </div>
@@ -185,9 +213,12 @@
               <img src="img/maket-4.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Modern organic thai</h2>
-              <p>Сайт для ресторана быстрого питания</p>
+              <div class="window-position">
+                <h2>Modern organic thai</h2>
+                <p class="overflow">Сайт для ресторана<br>
+                                    быстрого питания</p>
                 <a class="price">12 000 р.</a>
+            </div>
             </div>
 
           </div>
@@ -197,10 +228,13 @@
               <img src="img/maket-5.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Avenue</h2>
-              <p>Макет для блога о путешествиях</p>
+              <div class="window-position">
+                <h2>Avenue</h2>
+                <p>Макет для блога<br>
+                  о путешествиях</p>
                 <a class="price">8000 р.</a>
-            </div>
+              </div>
+              </div>
 
           </div>
 
@@ -209,10 +243,13 @@
               <img src="img/maket-6.jpg" width="240" height="240" alt="Макет-1" class="img">
 
             <div class="catalog-image-desc window">
-              <h2>Dovetail</h2>
-              <p>Интернет-магазин с галереей товаров</p>
+              <div class="window-position">
+                <h2>Dovetail</h2>
+                <p>Интернет-магазин<br>
+                  с галереей товаров</p>
                 <a class="price">14000 р.</a>
-          </div>
+            </div>
+            </div>
 
         </div>
 
@@ -229,7 +266,7 @@
               <a href="#">3</a>
             </li>
             <li>
-              <a href="#">Следующая</a>
+              <a href="#" class="following">Следующая</a>
             </li>
           </ul>
         </div>
@@ -239,25 +276,33 @@
 
     </main>
 
-                  <!--Студия на карте-->
+                    <!--Студия на карте-->
     <div class="maps">
       <div class="map-img">
         <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
 
-      <div class="container">
+      <div class="container map-container">
 
         <div class="map-address">
-          <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
-          <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
-                  <!--Адресное окно-->
+
+          <div class="map-mark-wrapper">
+            <div class="map-mark">
+              <img src="img/mark-on-map.png" width="231" height="190" alt="Расположение на карте">
+              <div class="map-min-logo">
+                <img src="img/logo.png" width="92" height="37" alt="Нёрдс">
+              </div>
+            </div>
+          </div>
+
+                    <!--Адресное окно-->
         <div class="address-window">
           <h3>Nёrds design studio</h3>
-          <p>
-            191186, Санкт-Петербург,
-            ул. Б. Конюшенная, дю 19/8
+          <p class="address">
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8
           </p>
-          <p>
+          <p class="number-telephone">
             тел. +7 (812) 275-75-75
           </p>
           <a href="#">
@@ -275,17 +320,17 @@
       <div class="container clearfix">
 
                     <!--Ссылки на соц. сети-->
-        <div class="footer-social">
-          <a href="#">
-            ВКонтакте
-          </a>
-          <a href="#">
-            Facebook
-          </a>
-          <a href="#">
-            Instagram
-          </a>
-        </div>
+      <div class="footer-social">
+        <a href="#" class="social-btn vk">
+          ВКонтакте
+        </a>
+        <a href="#" class="social-btn facebook">
+          facebook
+        </a>
+        <a href="#" class="social-btn instagram">
+          Instagram
+        </a>
+      </div>
 
                     <!--Скидка 10%-->
         <div class="discount">

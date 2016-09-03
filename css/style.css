@@ -83,11 +83,11 @@ h2 {
   color: #8f8f8f;
 }
 
-.ikon-sprite {
+.icon-sprite {
   position: relative;
 }
 
-.ikon-sprite::before {
+.icon-sprite::before {
   content: " ";
   position: absolute;
   top: 50%;
@@ -203,7 +203,8 @@ h1 {
 }
 
 .product-list {
-
+  padding-bottom: 78px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .goods a {
@@ -266,17 +267,22 @@ h1 {
   border-top: 3px solid #a3841f;
 }
 
+.info-studio {
+  margin-top: -80px;
+  border-bottom: 2px solid #eeeeee;
+}
+
 .block-left {
   float: left;
   width: 570px;
   min-height: 325px;
   margin-top: 121px;
-  margin-bottom: 102px;
+  margin-bottom: 50px;
 }
 
 .block-left h2 {
   font-weight: bold;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .block-left p {
@@ -325,7 +331,7 @@ h1 {
 }
 
 .block-right h3 {
-  margin-top: 10px;
+  margin-top: 22px;
   margin-left: -17px;
   text-transform: uppercase;
   font-size: 15px;
@@ -401,55 +407,42 @@ h1 {
 
                 /* Стили для ссылок-логотипов */
 .logo-links {
-  min-height: 167px;
-  padding-top: 70px;
-  margin-left: -12px;
-  margin-right: -12px;
-}
-
-.logo-links a:first-child {
-  display: inline-block;
-  vertical-align: top;
-  width: 204px;
-  margin-right: 122px;
-  margin-top: 15px;
-  margin-left: 12px;
-  padding-left: 12px;
-}
-
-.logo-links a:nth-child(2) {
-  display: inline-block;
-  vertical-align: top;
-  width: 204px;
-  margin-right: 122px;
-  margin-left: -11px;
-  margin-top: 4px;
-}
-
-.logo-links a:last-child {
-  display: inline-block;
-  vertical-align: top;
-  width: 204px;
-  margin-top: -3px;
-  margin-left: -8px;
-  margin-bottom: 112px;
-  padding-right: 12px;
+  border-bottom: 2px solid #eeeeee;
+  margin: 0;
+  padding: 40px 20px 10px;
 }
 
 .links {
-  margin: 0 -38px;
+  margin: 0 -40px;
+  padding: 0;
+  margin-bottom: 16px;
 }
 
 .link {
   display: inline-block;
-  width: 204px;
-  height: 86px;
-  line-height: 86px;
+  margin: 0 40px;
   text-align: center;
-  margin: 0 38px;
+  vertical-align: middle;
+  width: 218px;
+  margin-left: 22px;
+  margin-right: 74px;
 }
 
-                /* Стили для карты */
+.links .first {
+  margin-top: -2px;
+}
+
+.links .second {
+  margin-top: 5px;
+}
+
+.links .third {
+  margin-left: 32px;
+  margin-right: 0;
+  margin-top: 7px;
+}
+
+                  /* Стили для карты */
 
 .map-container {
   position: relative;
@@ -461,6 +454,7 @@ h1 {
 
 .maps {
   position: relative;
+  margin-top: 85px;
 }
 
 .address-window {
@@ -509,6 +503,17 @@ h1 {
   padding-bottom: 12px;
   border-radius: 3px;
   margin-left: 23px;
+}
+
+.address-window a:hover {
+  background-color: #d6494d;
+}
+
+.address-window a:active {
+  padding-top: 9px;
+  background-color: #b63538;
+  border-top: 3px solid #9b2d30;
+
 }
 
 .map-mark-wrapper {
@@ -752,6 +757,16 @@ input[type="checkbox"] + label {
   margin-left: 2px;
 }
 
+.sidebar .show:hover {
+  background-color: #e5e5e5;
+}
+
+.sidebar .show:active {
+  padding-top: 9px;
+  background-color: #d5d5d5;
+  border-top: 3px solid #b5b5b5;
+}
+
               /* Стили для осн. содерж. каталога */
 
 .sorting li {
@@ -900,6 +915,17 @@ input[type="checkbox"] + label {
   text-transform: uppercase;
   font-size: 18px;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.window .price:hover {
+  background-color: #d6494d;
+}
+
+.window .price:active {
+  padding-top: 5px;
+  background-color: #b63538;
+  border-top: 3px solid #9b2d30;
 }
 
 .window-position {
@@ -908,7 +934,9 @@ input[type="checkbox"] + label {
 
 .pagination {
   width: 400px;
-  margin-left: -36px;
+  margin-left: -48px;
+  margin-top: -40px;
+  margin-bottom: 88px;
 }
 
 .pagination a {
@@ -955,7 +983,7 @@ input[type="checkbox"] + label {
 .footer-social {
   float: left;
   width: 275px;
-  margin-top: 76px;
+  margin-top: 30px;
   min-height: 60px;
 }
 
@@ -965,7 +993,7 @@ input[type="checkbox"] + label {
   background-color: #e1e1e1;
   border-radius: 31px;
   margin-top: 42px;
-  margin-right: 23px;
+  margin-right: 24px;
 }
 
 .footer-social a:hover {
@@ -999,6 +1027,7 @@ input[type="checkbox"] + label {
 .clearfix::after {
   content: " ";
   clear: both;
+  display: table;
 }
 
 .social-btn {

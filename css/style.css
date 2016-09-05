@@ -69,7 +69,7 @@ h2 {
 
 .main-navigation a {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: black;
   text-transform: uppercase;
   text-decoration: none;
@@ -112,64 +112,142 @@ h2 {
 }
 
                   /* Стили для слайдера */
-.slider-text h2 {
-  width: 265px;
-  min-height:70px;
-  font-weight: bold;
-  margin-bottom: 18px;
-}
-
-.slider p {
-  width: 380px;
-  color: #283136;
-  font-weight: bold;
-  font-size: 15.5px;
-  margin-bottom: 16px;
-}
-
-.slider-text a {
-  display: inline-block;
-  font-size: 12px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-top: 11px;
-  padding-left: 71px;
-  padding-top: 8px;
-  padding-right: 71px;
-  padding-bottom: 8px;
-  background-color: #fb565a;
-  border-radius: 3px;
-  color: white;
-}
-
-.slider-text {
-  float: left;
-  width: 250px;
-}
-
-.slider img {
-  float: right;
-  width: 338px;
-  margin-top: 9px;
-}
-
 .slider {
-  min-height: 308px;
-  background-color: #eeeeee;
+  position: relative;
+  width: 880px;
+  margin: 0 auto;
+}
+
+.slide {
+  min-height: 333px;
+  background-repeat: no-repeat;
+}
+
+.slider input[type="radio"] {
+  display: none;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 81px;
+  left: 49%;
+  width: 200px;
+  margin-left: -102px;
+  text-align: center;
+}
+
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 2px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.slide-text {
+  width: 500px;
+  padding: 30px 0;
+}
+
+.slide-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 26px;
+}
+
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+
+.slide .btn {
+  display: block;
+  width: 220px;
+  margin-top: 28px;
+  padding: 8px 10px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
+}
+
+.slide .btn:hover {
+  background-color: #d6494d;
+}
+
+.slide .btn:active {
+  padding-top: 5px;
+  background-color: #b63538;
+  border-top: 3px solid #9b2d30;
+}
+
+.slide:nth-child(1) {
+  background-image: url("../img/slider-bg.png");
+  background-position: 541px 34px;
+}
+
+.slide:nth-child(2) {
+  background-image: url("../img/slider-bg-2.png");
+  background-position: 639px 38px;
+}
+
+.slide:nth-child(3) {
+  background-image: url("../img/slider-bg-3.png");
+  background-position: 541px 15px;
+}
+
+.slide {
+  display: none;
+}
+
+/*.slide:nth-child(1) {
+  display: block;
+}*/
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
 }
 
                   /* Стили для заголовка */
 .title {
   background-color: #eeeeee;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 h1 {
   text-transform: uppercase;
   line-height: 47px;
   font-weight: bold;
-  font-size: 40px;
-  padding-top: 23px;
+  font-size: 41px;
+  padding-top: 22px;
   padding-bottom: 84px;
   text-align: center;
 }
@@ -179,13 +257,14 @@ h1 {
 .goods {
   float: left;
   width: 240px;
-  height: 300px;
   margin-right: 80px;
   margin-top: 81px;
+  margin-bottom: 9px;
 }
 
 .goods h3 {
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 21px;
   margin-bottom: 18px;
@@ -209,10 +288,9 @@ h1 {
 
 .goods a {
   width: 61px;
-  min-height: 9px;
-  padding-left: 41px;
+  padding-left: 40px;
   padding-top: 9px;
-  padding-right: 41px;
+  padding-right: 40px;
   padding-bottom: 12px;
   text-decoration: none;
   text-transform: uppercase;
@@ -281,7 +359,7 @@ h1 {
 }
 
 .block-left h2 {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 18px;
 }
 
@@ -289,14 +367,14 @@ h1 {
   width: 590px;
   margin-bottom: 43px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
   color: #283136;
 }
 
 .block-left h3 {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 16px;
   color: #283136;
   margin-bottom: 22px;
 }
@@ -306,8 +384,8 @@ h1 {
 }
 
 .block-left li {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 22px;
   color: #283136;
   list-style: none;
@@ -332,18 +410,18 @@ h1 {
 
 .block-right h3 {
   margin-top: 22px;
-  margin-left: -17px;
+  margin-left: -20px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   color: #283136;
 }
 
 .block-right li {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 500;
   margin-bottom: 22px;
   margin-top: 21px;
-  color: 283136;
+  color: #283136;
   list-style: none;
   position: relative;
 }
@@ -377,7 +455,8 @@ h1 {
   min-height: 13px;
   margin-left: 46px;
   margin-top: 20px;
-  margin-bottom: -17px;
+  margin-bottom: -16px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -407,40 +486,24 @@ h1 {
 
                 /* Стили для ссылок-логотипов */
 .logo-links {
-  border-bottom: 2px solid #eeeeee;
-  margin: 0;
-  padding: 40px 20px 10px;
+  border-bottom: 2px solid #eee;
+    margin: 0;
+    padding: 40px 20px 10px;
 }
 
 .links {
-  margin: 0 -40px;
-  padding: 0;
-  margin-bottom: 16px;
+    margin: 0 -40px;
+    padding: 0;
 }
 
 .link {
-  display: inline-block;
-  margin: 0 40px;
-  text-align: center;
-  vertical-align: middle;
-  width: 218px;
-  margin-left: 22px;
-  margin-right: 74px;
+    display: inline-block;
+    margin: 0 40px;
+    text-align: center;
+    vertical-align: middle;
+    width: 218px;
 }
 
-.links .first {
-  margin-top: -2px;
-}
-
-.links .second {
-  margin-top: 5px;
-}
-
-.links .third {
-  margin-left: 32px;
-  margin-right: 0;
-  margin-top: 7px;
-}
 
                   /* Стили для карты */
 
@@ -454,7 +517,7 @@ h1 {
 
 .maps {
   position: relative;
-  margin-top: 85px;
+  margin-top: 108px;
 }
 
 .address-window {
@@ -471,38 +534,44 @@ h1 {
 .address-window h3 {
   text-transform: uppercase;
   font-size: 16px;
+  font-weight: 700;
   margin-top: 29px;
-  margin-left: 19px;
+  margin-left: 21px;
 }
 
 .address-window .address {
+  font-size: 16px;
+  font-weight: 500;
   margin-left: 21px;
+  margin-bottom: 19px;
   line-height: 20px;
   color: #666666;
-  font-weight: bold;
 }
 
 .address-window .number-telephone {
-  margin-bottom: 38px;
+  margin-bottom: 28px;
   color: #666666;
-  font-weight: bold;
-  margin-left: 19px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 21px;
 }
 
 .address-window a {
   text-decoration: none;
   font-size: 12px;
   text-transform: uppercase;
-  width: 95px;
-  min-height: 9px;
+  width: 193px;
+  /* min-height: 9px; */
   background-color: #fb565a;
   color: white;
-  padding-left: 53px;
-  padding-top: 12px;
-  padding-right: 53px;
-  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-top: 8px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  text-align: center;
   border-radius: 3px;
-  margin-left: 23px;
+  margin: 0 auto;
+  display: block;
 }
 
 .address-window a:hover {
@@ -510,7 +579,7 @@ h1 {
 }
 
 .address-window a:active {
-  padding-top: 9px;
+  padding-top: 5px;
   background-color: #b63538;
   border-top: 3px solid #9b2d30;
 
@@ -532,11 +601,57 @@ h1 {
   bottom: 98px;
 }
 
+              /* Стили для блока с формой входа */
+.block-form {
+  width: 630px;
+  min-height: 417px;
+  background-color: #4edbe0;
+  position: absolute;
+  top: 15.6%;
+  left: 41.6%;
+  display: block;
+  margin-left: -200px;
+  margin-top: -100px;
+  z-index: 3;
+}
+
+
+.block-form label {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 80px;
+  margin-right: -63px;
+  margin-bottom: 30px;
+  margin-top: 51px;
+}
+
+.block-form input {
+  width: 215px;
+  min-height: 32px;
+  margin-top: 8px;
+}
+
+.block-form [name="text-letter"] {
+  width: 455px;
+  min-height: 50px;
+  margin-top: -110px;
+}
+
+.block-form .text-letter {
+
+}
+
+.block-form label + input {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
               /* Стили для боковой колонки */
 .sidebar {
   float: left;
   width: 240px;
   margin-top: 50px;
+  margin-left: 2px;
 }
 
 .sidebar fieldset {
@@ -546,6 +661,7 @@ h1 {
 .sidebar-price {
   margin-top: 28px;
   margin-left: -13px;
+  margin-bottom: -2px;
 }
 
 .sidebar-price legend,
@@ -571,13 +687,13 @@ h1 {
 .sidebar-grid label {
   margin-bottom: -4px;
   margin-left: -9px;
-  font-weight: bold;
+  font-weight: 500;
   color: #283136;
 }
 
 .sidebar-feature legend {
   margin-left: -17px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .sidebar-feature label:first-child {
@@ -585,7 +701,7 @@ h1 {
 }
 
 .sidebar-feature label {
-  font-weight: bold;
+  font-weight: 500;
   color: #283136;
   margin-left: -9px;
   margin-bottom: -4px;
@@ -632,7 +748,7 @@ h1 {
 }
 
 .range-controls .max-toggle {
-  left: 161px;
+  left: 160px;
 }
 
 .price-controls input {
@@ -668,13 +784,12 @@ h1 {
   font-size: 16px;
   text-transform: uppercase;
   margin-right: -4px;
-  margin-left: 1px;
 }
 
 .price-into {
   font-size: 16px;
   text-transform: uppercase;
-  margin-right: -6px;
+  margin-right: -5px;
 }
 
 input[type="checkbox"] {
@@ -691,8 +806,22 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding: 6px 0px 18px 30px;
+  line-height: 20px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
                 /* Сетки, метки списка */
-.sidebar-grid input[type="checkbox"] + label::before {
+.sidebar-grid input[type="radio"] + label::before {
   content: " ";
   display: block;
   width: 27px;
@@ -706,11 +835,11 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
-.sidebar-grid input[type="checkbox"] + label:first-child::before {
+.sidebar-grid input[type="radio"] + label:first-child::before {
   background-position: -860px -34px;
 }
 
-.sidebar-grid input[type="checkbox"]:checked + label::before {
+.sidebar-grid input[type="radio"]:checked + label::before {
   background-position: -1145px -34px;
 }
 
@@ -721,25 +850,25 @@ input[type="checkbox"] + label {
   width: 27px;
   height: 27px;
   background-image: url("../img/sprite.png");
-  background-position: -475px -34px;
+  background-position: -477px -33px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 3px;
-  left: -5px;
+  top: 1px;
+  left: -4px;
 }
 
 .sidebar-feature input[type="checkbox"]:checked + label::before {
-  background-position: -763px -34px;
+  background-position: -764px -33px;
 }
 
 .sidebar-grid {
   width: 168px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .sidebar-feature {
   width: 168px;
-  margin-bottom: 43px;
+  margin-bottom: 39px;
 }
 
 .sidebar .show {
@@ -754,7 +883,7 @@ input[type="checkbox"] + label {
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;
-  margin-left: 2px;
+  margin-left: -2px;
 }
 
 .sidebar .show:hover {
@@ -794,6 +923,7 @@ input[type="checkbox"] + label {
 
 .sorting a:active {
   color: black;
+  border-bottom: none;
 }
 
 .sorting li:first-child {
@@ -815,7 +945,7 @@ input[type="checkbox"] + label {
   width: 87px;
   margin-top: 57px;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;
   margin-left: -1px;
 }
@@ -864,7 +994,7 @@ input[type="checkbox"] + label {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin-bottom: 104px;
+  margin-bottom: 105px;
 }
 
 .catalog-image-desc {
@@ -872,57 +1002,56 @@ input[type="checkbox"] + label {
   min-height: 200px;
   text-align: center;
   background-color: white;
-}
-
-.catalog-image .window {
   position: absolute;
   bottom: 26px;
   left: 20px;
 }
 
 
-.window h2 {
+.catalog-image-desc h2 {
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 33px;
   margin-bottom: -3px;
   line-height: 24px;
 }
 
-.window p {
+.catalog-image-desc p {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   color: #283136;
   line-height: 18px;
-  margin-bottom: 37px;
+  margin-bottom: 28px;
 }
 
-.window .overflow {
-  margin-bottom: 14px;
+.catalog-image-desc .overflow {
+  margin-bottom: 4px;
 }
 
-.window .price {
+.catalog-image-desc .price {
   position: absolute;
   top: 99px;
   left: 30px;
-  padding-left: 35px;
+  padding-left: 34px;
   padding-top: 8px;
-  padding-right: 35px;
+  padding-right: 34px;
   padding-bottom: 8px;
   background-color: #fb565a;
   color: white;
   text-transform: uppercase;
   font-size: 18px;
+  font-weight: 500;
   border-radius: 3px;
   cursor: pointer;
+  margin-left: 1px;
 }
 
-.window .price:hover {
+.catalog-image-desc .price:hover {
   background-color: #d6494d;
 }
 
-.window .price:active {
+.catalog-image-desc .price:active {
   padding-top: 5px;
   background-color: #b63538;
   border-top: 3px solid #9b2d30;
@@ -935,8 +1064,8 @@ input[type="checkbox"] + label {
 .pagination {
   width: 400px;
   margin-left: -48px;
-  margin-top: -40px;
-  margin-bottom: 88px;
+  margin-top: -42px;
+  margin-bottom: -37px;
 }
 
 .pagination a {
@@ -952,6 +1081,37 @@ input[type="checkbox"] + label {
   text-transform: uppercase;
   margin-left: 5px;
 }
+
+.pagination a:hover {
+  background-color: #e5e5e5;
+}
+
+.pagination a:active {
+  padding-top: 8px;
+  background-color: #d5d5d5;
+  border-top: 3px solid #b5b5b5;
+}
+
+.pagination .active:hover {
+  padding-left: 14px;
+  padding-top: 9px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  background-color: white;
+  border: 2px solid #f1f1f1;
+  border-radius: 3px;
+}
+
+.pagination .active:active {
+  padding-left: 14px;
+  padding-top: 9px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  background-color: white;
+  border: 2px solid #f1f1f1;
+  border-radius: 3px;
+}
+
 
 .pagination li {
   display: inline-block;
@@ -983,7 +1143,8 @@ input[type="checkbox"] + label {
 .footer-social {
   float: left;
   width: 275px;
-  margin-top: 30px;
+  margin-top: 29px;
+  margin-left: 1px;
   min-height: 60px;
 }
 
@@ -993,7 +1154,7 @@ input[type="checkbox"] + label {
   background-color: #e1e1e1;
   border-radius: 31px;
   margin-top: 42px;
-  margin-right: 24px;
+  margin-right: 23px;
 }
 
 .footer-social a:hover {
@@ -1002,7 +1163,7 @@ input[type="checkbox"] + label {
 
 .footer-social a:active {
   background-color: #d6494d;
-  box-shadow: 0 2px 1px 0 #b63e42;
+  box-shadow: 0px 3px 0px #b63e42 inset;
 }
 
 .discount {
@@ -1018,10 +1179,10 @@ input[type="checkbox"] + label {
 }
 
 .discount p {
-  font-weight: bold;
+  font-weight: 500;
   color: #283136;
   margin-left: -20px;
-  margin-top: -19px;
+  margin-top: -20px;
 }
 
 .clearfix::after {

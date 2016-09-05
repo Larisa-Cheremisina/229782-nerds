@@ -95,13 +95,13 @@
           <fieldset class="sidebar-grid">
             <legend>Сетка:</legend>
 
-            <input type="checkbox" name="adaptive" id="adaptive" checked>
+            <input type="radio" name="grid" id="adaptive" checked>
             <label for="adaptive">Адаптивная</label>
 
-            <input type="checkbox" name="fixed" id="fixed ">
+            <input type="radio" name="grid" id="fixed">
             <label for="fixed">Фиксированная</label>
 
-            <input type="checkbox" name="stretch" id="stretch">
+            <input type="radio" name="grid" id="stretch">
             <label for="stretch">Резиновая</label>
           </fieldset>
 
@@ -167,10 +167,10 @@
           <div class="catalog-image">
               <img src="img/maket-1.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Aviator</h2>
-                <p>Одностраничный макет<br>
+                <p>Одностраничный макет
                   с авторским дизайном</p>
                 <a class="price">8000 р.</a>
             </div>
@@ -182,10 +182,10 @@
           <div class="catalog-image">
               <img src="img/maket-2.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Sunset</h2>
-                <p>Интернет-магазин<br>
+                <p>Интернет-магазин
                   с личным кабинетом</p>
                 <a class="price">10000 р.</a>
             </div>
@@ -197,10 +197,10 @@
           <div class="catalog-image">
               <img src="img/maket-3.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Forte</h2>
-                <p>Отличный макет<br>
+                <p>Отличный макет
                   для личного блога</p>
                 <a class="price">5000 р.</a>
             </div>
@@ -212,10 +212,10 @@
           <div class="catalog-image">
               <img src="img/maket-4.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Modern organic thai</h2>
-                <p class="overflow">Сайт для ресторана<br>
+                <p class="overflow">Сайт для ресторана
                                     быстрого питания</p>
                 <a class="price">12 000 р.</a>
             </div>
@@ -227,10 +227,10 @@
           <div class="catalog-image">
               <img src="img/maket-5.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Avenue</h2>
-                <p>Макет для блога<br>
+                <p>Макет для блога
                   о путешествиях</p>
                 <a class="price">8000 р.</a>
               </div>
@@ -242,10 +242,10 @@
           <div class="catalog-image">
               <img src="img/maket-6.jpg" width="240" height="240" alt="Макет-1" class="img">
 
-            <div class="catalog-image-desc window">
+            <div class="catalog-image-desc">
               <div class="window-position">
                 <h2>Dovetail</h2>
-                <p>Интернет-магазин<br>
+                <p>Интернет-магазин
                   с галереей товаров</p>
                 <a class="price">14000 р.</a>
             </div>
@@ -309,11 +309,28 @@
             Напишите нам
           </a>
         </div>
-        </div>
 
-        </div>
+                      <!--Блок с формой входа-->
+        <div class="block-form">
+          <form>
+            <label for="your-name">Ваше имя:<br>
+              <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+            </label>
 
-    </div>
+            <label for="your-name">Ваш e-mail:<br>
+              <input type="text" name="your-e-mail" id="your-e-mail" placeholder="Для отправки ответа">
+            </label>
+
+            <label for="text-letter">Текст письма:
+              <input type="text" name="text-letter" id="text-letter" placeholder="В свободной форме"><br>
+            </label>
+
+            <button type="submit" name="send">Отправить</button>
+          </form>
+        </div>
+        </div>
+      </div>
+      </div>
 
                     <!--Футер-->
     <footer class="main-footer">

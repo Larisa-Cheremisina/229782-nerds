@@ -633,17 +633,28 @@ h1 {
 
 .block-form [name="text-letter"] {
   width: 455px;
-  min-height: 50px;
-  margin-top: -110px;
+  min-height: 108px;
+  margin-top: -23px;
+  margin-left: 80px;
 }
 
 .block-form .text-letter {
+  margin-left: 81px;
+  margin-right: -27px;
+  margin-top: -11px;
+}
 
+.block-form .your-e-mail {
+  margin-left: 81px;
 }
 
 .block-form label + input {
   display: inline-block;
   margin-bottom: 13px;
+}
+
+.block-form button {
+  padding: 10px;
 }
 
               /* Стили для боковой колонки */

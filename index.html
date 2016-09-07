@@ -9,19 +9,19 @@
   </head>
   <body>
 
-                  <!--Хедер-->
+    <!--Хедер-->
     <header class="main-header">
 
     <div class="container clearfix">
-                  <!--Логотип в хедере-->
+        <!--Логотип в хедере-->
         <div class="logo">
           <img src="img/logo.png" width="140" height="56" alt="Нёрдс">
         </div>
-                  <!--Навигационное меню-->
+        <!--Навигационное меню-->
         <nav class="main-navigation">
           <ul>
             <li class="active">
-              <a href="#">Студия</a>
+              <a href="index.html">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
@@ -40,7 +40,7 @@
 
         </div>
 
-                  <!--Слайдер-->
+      <!--Слайдер-->
       <div class="slider">
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -93,13 +93,13 @@
 
     </header>
 
-                  <!--Основное содержание-->
+    <!--Основное содержание-->
     <main class="container">
 
-                  <!--Продукция студии-->
+      <!--Продукция студии-->
       <div class="product-list clearfix">
 
-                  <!--Веб-сайты-->
+        <!--Веб-сайты-->
         <div class="product-website goods">
           <img src="img/red.png" width="240" height="124" alt="Компьютер на красном фоне">
           <h3>Веб-сайты</h3>
@@ -110,7 +110,7 @@
           <a href="#">Заказать</a>
         </div>
 
-                  <!--Приложения-->
+        <!--Приложения-->
         <div class="product-apps goods">
           <img src="img/green.png" width="240" height="124" alt="Телефоны на зеленом фоне">
           <h3>Приложения</h3>
@@ -121,7 +121,7 @@
           <a href="#">Заказать</a>
         </div>
 
-                  <!--Презентации-->
+        <!--Презентации-->
         <div class="product-presentation goods">
           <img src="img/yellow.png" width="240" height="124" alt="Мольберт на желтом фоне">
           <h3>Презентации</h3>
@@ -134,7 +134,7 @@
 
       </div>
 
-                  <!--Информация о студии-->
+      <!--Информация о студии-->
       <div class="info-studio clearfix">
 
           <div class="block-left">
@@ -184,7 +184,7 @@
 
       </div>
 
-                    <!--Ссылки-логотипы-->
+      <!--Ссылки-логотипы-->
       <div class="logo-links clearfix">
         <div class="links">
         <div class="link first">
@@ -207,13 +207,13 @@
 
     </main>
 
-                    <!--Студия на карте-->
+    <!--Студия на карте-->
     <div class="maps">
       <div class="map-img">
         <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
 
-                    <!--Блок с формой входа-->
+      <!--Блок с формой входа-->
       <div class="block-form">
         <div class="modal-content">
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -223,7 +223,7 @@
             <input type="text" class="your-name-input" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
           </label>
 
-          <label for="your-name" class="your-e-mail">Ваш e-mail:<br>
+          <label for="your-e-mail" class="your-e-mail">Ваш e-mail:<br>
             <input type="text" class="your-e-mail-input" name="your-e-mail" id="your-e-mail" placeholder="Для отправки ответа"><br>
           </label>
 
@@ -247,7 +247,8 @@
               </div>
             </div>
           </div>
-                  <!--Адресное окно-->
+
+        <!--Адресное окно-->
         <div class="address-window">
             <h3>Nёrds design studio</h3>
             <p class="address">
@@ -257,20 +258,18 @@
             <p class="number-telephone">
               тел. +7 (812) 275-75-75
             </p>
-            <a href="#">
-              <button type="button" class="btn-form-js">Напишите нам</button>
-            </a>
+            <a href="#" class="btn-form-js">Напишите нам</a>
         </div>
 
         </div>
       </div>
       </div>
 
-                    <!--Футер-->
+    <!--Футер-->
     <footer class="main-footer">
       <div class="container clearfix">
 
-                    <!--Ссылки на соц. сети-->
+        <!--Ссылки на соц. сети-->
         <div class="footer-social">
           <a href="#" class="social-btn vk">
             ВКонтакте
@@ -283,7 +282,7 @@
           </a>
         </div>
 
-                    <!--Скидка 10%-->
+        <!--Скидка 10%-->
         <div class="discount">
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -312,14 +311,6 @@
       link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("modal-content-show");
-
-        /*if (storage) {
-          your-name-input.value = storage;
-          your-e-mail-input.focus();
-        } else {
-          your-name-input.focus();
-        }*/
-
       });
 
       close.addEventListener("click", function(event) {
@@ -327,53 +318,6 @@
         popup.classList.remove("modal-content-show");
         popup.classList.remove("modal-error");
       });
-
-      /*form.addEventListener("submit", function(event) {
-        event.preventDefault();
-        if (!login.value || !password.value) {
-          event.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        }         } else {
-          localStorage.setItem("login", login.value);
-        }
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("modal-content-show")) {
-            popup.classList.remove("modal-content-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });*/
-      /*
-      var mapOpen = document.querySelector(".modal-content-map");
-
-      var mapPopup = document.querySelector(".modal-content-map");
-      var mapClose = mapPopup.querySelector(".modal-content-close");
-
-      mapOpen.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.add("modal-content-show");
-      });
-
-      mapClose.addEventListener("click", function(event) {
-        event.preventDefault();
-        mapPopup.classList.remove("modal-content-show");
-      });
-
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (mapPopup.classList.contains("modal-content-show")) {
-            mapPopup.classList.remove("modal-content-show");
-          }
-        }
-      }); */
       </script>
-    <!--  <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xxIXIOfOmEnHV8PTak339h8FDW2ZDY_a&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
-    </script> -->
   </body>
 </html>

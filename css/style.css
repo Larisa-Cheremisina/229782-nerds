@@ -1170,7 +1170,7 @@ input[type="radio"] + label {
 }
 
 
-.catalog-image .catalog-image-desc {
+.catalog-image:hover .catalog-image-desc {
   display: block;
 }
 

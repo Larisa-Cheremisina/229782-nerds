@@ -215,20 +215,23 @@
 
                     <!--Блок с формой входа-->
       <div class="block-form">
+        <div class="modal-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        </div>
         <form>
           <label for="your-name">Ваше имя:<br>
-            <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+            <input type="text" class="your-name-input" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
           </label>
 
           <label for="your-name" class="your-e-mail">Ваш e-mail:<br>
-            <input type="text" name="your-e-mail" id="your-e-mail" placeholder="Для отправки ответа"><br>
+            <input type="text" class="your-e-mail-input" name="your-e-mail" id="your-e-mail" placeholder="Для отправки ответа"><br>
           </label>
 
           <label for="text-letter" class="text-letter">Текст письма:</label><br>
-            <input type="text" name="text-letter" id="text-letter" placeholder="В свободной форме"><br>
+            <input type="text" class="text-letter-input" name="text-letter" id="text-letter" placeholder="В свободной форме"><br>
           <br>
 
-          <button type="submit" name="send">Отправить</button>
+          <button class="submit" type="submit" name="send">Отправить</button>
         </form>
       </div>
 
@@ -255,7 +258,7 @@
               тел. +7 (812) 275-75-75
             </p>
             <a href="#">
-              Напишите нам
+              <button type="button" class="btn-form-js">Напишите нам</button>
             </a>
         </div>
 
@@ -289,5 +292,88 @@
       </div>
     </footer>
 
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <div id="yandex-map"></div>
+      </div>
+      <div class="modal-overlay"></div>
+
+      <script>
+      var link = document.querySelector(".btn-form-js");
+      var popup = document.querySelector(".block-form");
+      var close = popup.querySelector(".modal-content-close");
+
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=your-name]");
+      var email = popup.querySelector("[name=your-e-mail]");
+
+      var storage = localStorage.getItem("your-name-input");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        /*if (storage) {
+          your-name-input.value = storage;
+          your-e-mail-input.focus();
+        } else {
+          your-name-input.focus();
+        }*/
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      /*form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (!login.value || !password.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        }         } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });*/
+      /*
+      var mapOpen = document.querySelector(".modal-content-map");
+
+      var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-content-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
+      }); */
+      </script>
+    <!--  <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xxIXIOfOmEnHV8PTak339h8FDW2ZDY_a&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+    </script> -->
   </body>
 </html>

@@ -101,7 +101,7 @@
 
         <!--Веб-сайты-->
         <div class="product-website goods">
-          <img src="img/red.png" width="240" height="124" alt="Компьютер на красном фоне">
+          <img src="img/red.jpg" width="240" height="124" alt="Компьютер на красном фоне">
           <h3>Веб-сайты</h3>
           <p>
             Мир никогда не будет прежним
@@ -112,7 +112,7 @@
 
         <!--Приложения-->
         <div class="product-apps goods">
-          <img src="img/green.png" width="240" height="124" alt="Телефоны на зеленом фоне">
+          <img src="img/green.jpg" width="240" height="124" alt="Телефоны на зеленом фоне">
           <h3>Приложения</h3>
           <p>
             Покорите топ-10 приложений<br>
@@ -123,7 +123,7 @@
 
         <!--Презентации-->
         <div class="product-presentation goods">
-          <img src="img/yellow.png" width="240" height="124" alt="Мольберт на желтом фоне">
+          <img src="img/yellow.jpg" width="240" height="124" alt="Мольберт на желтом фоне">
           <h3>Презентации</h3>
           <p>
             Вы даже не подозреваете,
@@ -210,7 +210,6 @@
     <!--Студия на карте-->
     <div class="maps">
       <div class="map-img">
-        <img src="img/map.jpg" width="1200" height="416" alt="Нёрдс на карте">
       </div>
 
       <!--Блок с формой входа-->
@@ -297,27 +296,34 @@
       </div>
       <div class="modal-overlay"></div>
 
+      <script src="js/script.js"></script>
+
       <script>
-      var link = document.querySelector(".btn-form-js");
-      var popup = document.querySelector(".block-form");
-      var close = popup.querySelector(".modal-content-close");
+      var mapOpen = document.querySelector(".modal-content-map");
 
-      var form = popup.querySelector("form");
-      var name = popup.querySelector("[name=your-name]");
-      var email = popup.querySelector("[name=your-e-mail]");
+      var mapPopup = document.querySelector(".modal-content-map");
+      var mapClose = mapPopup.querySelector(".modal-content-close");
 
-      var storage = localStorage.getItem("your-name-input");
-
-      link.addEventListener("click", function(event) {
+      mapOpen.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.add("modal-content-show");
+        mapPopup.classList.add("modal-content-show");
       });
 
-      close.addEventListener("click", function(event) {
+      mapClose.addEventListener("click", function(event) {
         event.preventDefault();
-        popup.classList.remove("modal-content-show");
-        popup.classList.remove("modal-error");
+        mapPopup.classList.remove("modal-content-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-content-show")) {
+            mapPopup.classList.remove("modal-content-show");
+          }
+        }
       });
       </script>
+      <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xxIXIOfOmEnHV8PTak339h8FDW2ZDY_a&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+    </script>
   </body>
 </html>

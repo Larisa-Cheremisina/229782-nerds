@@ -53,7 +53,7 @@ h2 {
 }
 
 .main-navigation li:last-child {
-  margin-left: 50px;
+  margin-left: 46px;
   margin-right: 0;
 }
 
@@ -136,6 +136,7 @@ h2 {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   width: 4px;
   height: 4px;
   margin: 0 3px;
@@ -519,7 +520,14 @@ h1 {
 
 .maps {
   position: relative;
-  margin-top: 71px;
+  margin-top: 108px;
+}
+
+.maps .map-img {
+  background-image: url("../img/map.jpg");
+  width: 1200px;
+  height: 416px;
+  margin: 0 auto;
 }
 
 .address-window {
@@ -527,7 +535,7 @@ h1 {
   vertical-align: top;
   position: absolute;
   left: 0;
-  bottom: 94px;
+  bottom: 88px;
   width: 250px;
   min-height: 240px;
   background-color: white;
@@ -589,8 +597,8 @@ h1 {
 
 .map-mark-wrapper {
   position: absolute;
-  right: -31px;
-  bottom: 114px;
+  right: -30px;
+  bottom: 108px;
 }
 
 .map-mark {
@@ -640,7 +648,7 @@ h1 {
   min-height: 416px;
   background-color: white;
   position: absolute;
-  top: 24.5%;
+  top: 15.5%;
   left: 48.7%;
   /* block - открыть форму */
   display: none;
@@ -673,7 +681,7 @@ h1 {
   top: 19px;
   right: 8px;
   width: 25px;
-  height: 3px;
+  height: 5px;
   background-color: white;
   border-radius: 1px;
 }
@@ -724,7 +732,7 @@ h1 {
   border: 2px solid #a2a9ac;
 }
 
-.block-form input:active {
+.block-form input:focus {
   border: 2px solid #56bffb;
 }
 
@@ -747,6 +755,7 @@ h1 {
 
 .block-form label + input {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 13px;
 }
 
@@ -959,11 +968,11 @@ h1 {
   margin-right: -5px;
 }
 
-input[type="checkbox"] {
+.checkbox {
   display: none;
 }
 
-input[type="checkbox"] + label {
+.checkbox + label {
   position: relative;
   padding: 6px 0px 18px 30px;
   line-height: 20px;
@@ -973,11 +982,11 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
-input[type="radio"] {
+.radio-button {
   display: none;
 }
 
-input[type="radio"] + label {
+.radio-button + label {
   position: relative;
   padding: 6px 0px 18px 30px;
   line-height: 20px;
@@ -988,7 +997,7 @@ input[type="radio"] + label {
 }
 
 /* Сетки, метки списка */
-.sidebar-grid input[type="radio"] + label::before {
+.radio-button + label::before {
   content: " ";
   display: block;
   width: 27px;
@@ -1002,16 +1011,26 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
-.sidebar-grid input[type="radio"] + label:first-child::before {
+.radio-button + label:first-child::before {
   background-position: -860px -34px;
 }
 
-.sidebar-grid input[type="radio"]:checked + label::before {
+.radio-button:checked + label::before {
   background-position: -1145px -34px;
 }
 
+.radio-button:disabled + label::before{
+  cursor: pointer;
+  background-position: -860px -33px;
+}
+
+.radio-button:checked:disabled + label::before{
+  cursor: pointer;
+  background-position: -1050px -33px;
+}
+
 /* Особенности, метки списка */
-.sidebar-feature input[type="checkbox"] + label::before {
+.checkbox + label::before {
   content: " ";
   display: block;
   width: 27px;
@@ -1024,8 +1043,18 @@ input[type="radio"] + label {
   left: -4px;
 }
 
-.sidebar-feature input[type="checkbox"]:checked + label::before {
+.checkbox:checked + label::before {
   background-position: -764px -33px;
+}
+
+.checkbox:disabled + label::before{
+  cursor: pointer;
+  background-position: -291px -33px;
+}
+
+.checkbox:checked:disabled + label::before{
+  cursor: pointer;
+  background-position: -570px -33px;
 }
 
 .sidebar-grid {
@@ -1122,10 +1151,18 @@ input[type="radio"] + label {
 	height: 0;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 8px solid #00ca74;
+	border-top: 8px solid #c1c1c1;
   margin-top: 6px;
   margin-left: 1px;
   cursor: pointer;
+}
+
+.drop-down-list .down:hover {
+  border-top-color: #b5b5b5;
+}
+
+.drop-down-list .down:active {
+  border-top-color: black;
 }
 
 .drop-down-list .up {
@@ -1136,6 +1173,24 @@ input[type="radio"] + label {
 	border-bottom: 8px solid #c1c1c1;
   margin-left: 18px;
   margin-top: -8px;
+  cursor: pointer;
+}
+
+.drop-down-list .up:hover {
+  border-bottom-color: #b5b5b5;
+}
+
+.drop-down-list .up:active {
+  border-bottom-color: black;
+}
+
+.drop-down-list .down-active {
+  border-top-color: #00ca74;
+}
+
+.drop-down-list .down-active:hover,
+.drop-down-list .down-active:active {
+  border-top-color: #00ca74;
 }
 
 .catalog-layout {
@@ -1174,7 +1229,7 @@ input[type="radio"] + label {
   display: block;
 }
 
-.catalog-image:before {
+.catalog-image::before {
   content: " ";
   position: absolute;
   width: 10px;
@@ -1186,7 +1241,7 @@ input[type="radio"] + label {
   box-shadow: 17px 0px 0px 0 white;
 }
 
-.catalog-image:after {
+.catalog-image::after {
   content: " ";
   position: absolute;
   width: 10px;
@@ -1272,6 +1327,7 @@ input[type="radio"] + label {
   width: 400px;
   margin-left: -49px;
   margin-top: -8px;
+  margin-bottom: -37px;
 }
 
 .pagination a {
@@ -1322,7 +1378,7 @@ input[type="radio"] + label {
 
 .pagination li {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 .pagination .active {
@@ -1361,8 +1417,8 @@ input[type="radio"] + label {
   height: 63px;
   background-color: #e1e1e1;
   border-radius: 31px;
-  margin-top: 42px;
-  margin-right: 23px;
+  margin-top: 49px;
+  margin-right: 24px;
 }
 
 .footer-social a:hover {
@@ -1382,8 +1438,8 @@ input[type="radio"] + label {
 .discount h2 {
   font-weight: bold;
   width: 570px;
-  margin-left: -19px;
-  margin-top: 69px;
+  margin-left: -20px;
+  margin-top: 75px;
 }
 
 .discount p {

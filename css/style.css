@@ -80,13 +80,8 @@ h2 {
 .icon-sprite::before {
   content: " ";
   position: absolute;
-  top: 50%;
+  top: 0;
   left: -34%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 }

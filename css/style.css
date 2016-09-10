@@ -102,7 +102,7 @@ h2 {
 }
 
 .basket:active::before {
-  background-position: -25px -27px;
+  background-position: -24px -27px;
 }
 
 .main-navigation .active {

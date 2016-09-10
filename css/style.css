@@ -524,8 +524,8 @@ h1 {
 }
 
 .maps .map-img {
-  background-image: url("../img/map.jpg");
-  width: 1200px;
+  background: url("../img/map.jpg") no-repeat top center;
+  width: 100%;
   height: 416px;
   margin: 0 auto;
 }
@@ -648,7 +648,7 @@ h1 {
   min-height: 416px;
   background-color: white;
   position: absolute;
-  top: 15.5%;
+  top: 15.7%;
   left: 48.7%;
   /* block - открыть форму */
   display: none;
@@ -715,8 +715,8 @@ h1 {
   display: inline-block;
   vertical-align: top;
   margin-left: 80px;
-  margin-right: -64px;
-  margin-bottom: 30px;
+  margin-right: -63px;
+  margin-bottom: 27px;
   margin-top: 51px;
   font-weight: 500;
 }
@@ -725,15 +725,16 @@ h1 {
   width: 202px;
   min-height: 32px;
   margin-top: 8px;
-  border: 2px solid #d7dcde;
+  border-radius: 2px;
+  border: 1px solid #d7dcde;
 }
 
 .block-form input:hover {
-  border: 2px solid #a2a9ac;
+  border: 1px solid #a2a9ac;
 }
 
 .block-form input:focus {
-  border: 2px solid #56bffb;
+  border: 1px solid #56bffb;
 }
 
 .block-form [name="text-letter"] {
@@ -746,7 +747,8 @@ h1 {
 .block-form .text-letter {
   margin-left: 81px;
   margin-right: -27px;
-  margin-top: -11px;
+  margin-top: -8px;
+  margin-bottom: 31px;
 }
 
 .block-form .your-e-mail {
@@ -766,6 +768,7 @@ h1 {
   border-radius: 3px;
   background-color: #fb565a;
   color: white;
+  font-weight: 500;
   text-transform: uppercase;
   border: none;
   font-size: 12px;
@@ -786,23 +789,86 @@ h1 {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 14px;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.block-form [placeholder="Представьтесь, пожалуйста"]::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Представьтесь, пожалуйста"]::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Представьтесь, пожалуйста"]:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Представьтесь, пожалуйста"]:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .block-form [placeholder="Для отправки ответа"] {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 13px;
+  padding-left: 14px;
+  padding-top: 2px;
+}
+
+.block-form [placeholder="Для отправки ответа"]::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Для отправки ответа"]::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Для отправки ответа"]:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="Для отправки ответа"]:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .block-form [placeholder="В свободной форме"] {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 13px;
+  padding-left: 15px;
   vertical-align: top;
-  padding-bottom: 76px;
+  padding-bottom: 77px;
+  margin-bottom: 1px;
+}
+
+.block-form [placeholder="В свободной форме"]::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="В свободной форме"]::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="В свободной форме"]:-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.block-form [placeholder="В свободной форме"]:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 /* Стили для интерактивной карты */
@@ -1417,7 +1483,7 @@ h1 {
   height: 63px;
   background-color: #e1e1e1;
   border-radius: 31px;
-  margin-top: 49px;
+  margin-top: 47px;
   margin-right: 24px;
 }
 

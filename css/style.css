@@ -29,7 +29,7 @@ h2 {
 
 .logo {
   float: left;
-  width: 139px;
+  width: 140px;
 }
 
 .main-navigation {
@@ -755,12 +755,6 @@ h1 {
 
 .block-form .your-e-mail {
   margin-left: 81px;
-}
-
-.block-form label + input {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 13px;
 }
 
 .block-form .submit {
